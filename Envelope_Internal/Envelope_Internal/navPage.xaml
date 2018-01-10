@@ -1,12 +1,39 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Envelope_Internal.navPage">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="Envelope_Internal.navPage"
+             Title=" City of Ekurhuleni"
+             BackgroundColor="White">
+
+    <Image  Margin="20" VerticalOptions="Start" HeightRequest="220" WidthRequest="220"  Source="Ekurhulen.png"/>
+    
+    <StackLayout VerticalOptions="Center" Spacing="50">
+
+        <!--<StackLayout.Resources>
+            <ResourceDictionary>
+                <Style TargetType ="Button">
+                    <Setter Property="HorizontalOption" Value="Center"/>
+                </Style>
+            </ResourceDictionary>
+        </StackLayout.Resources>-->
+        <StackLayout  Orientation="Horizontal" HorizontalOptions="FillAndExpand">
+        
+        
+        <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand">
+        
+
+        <Button Text="m-Health" BackgroundColor="Gray" BorderRadius="5" TextColor="Black">
+
+            <Button.Image>
+                <OnPlatform x:TypeArguments ="FileImageSource"
+                            ios ="ic_local_hospital_black_24dp.png"
+                            Android="ic_call_3x.png"
+                            />
+            </Button.Image>
+             
+        </Button>
+    </StackLayout>
+        
+  </StackLayout>
+  </StackLayout>
 </ContentPage>
