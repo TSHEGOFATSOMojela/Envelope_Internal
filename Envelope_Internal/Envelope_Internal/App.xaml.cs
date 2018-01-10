@@ -13,7 +13,7 @@ namespace Envelope_Internal
 		{
 			InitializeComponent();
 
-			MainPage = new Envelope_Internal.MainPage();
+			MainPage = new NavigationPage (new Envelope_Internal.MainPage());
 		}
 
 		protected override void OnStart ()
