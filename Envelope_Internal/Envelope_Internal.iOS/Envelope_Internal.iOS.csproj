@@ -145,6 +145,24 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_call_3x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\requestIt.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\settings.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\siyakhoka.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tourisim.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\general.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\reportIt.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
 </Project>
