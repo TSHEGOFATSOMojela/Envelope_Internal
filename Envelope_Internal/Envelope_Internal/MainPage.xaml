@@ -5,31 +5,38 @@
              x:Class="Envelope_Internal.MainPage"
              BackgroundColor="White">
 
-    <ScrollView>
-
+    <ScrollView HorizontalOptions="CenterAndExpand">
+        
         <StackLayout>
 
-            <Image  Margin="20" VerticalOptions="Start" HeightRequest="220" WidthRequest="220"  Source="Ekurhulen.png"/>
 
-            
-            <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Start"/>
+            <Image  Margin="20" VerticalOptions="Start" HeightRequest="180" WidthRequest="180"  Source="Ekurhulen.png"/>
 
-            <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Start"/>
+            <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
 
-            <Label Text="Forgot password?" TextColor="Pink" HorizontalTextAlignment="Start"/>
-
-            <Button x:Name="login" Text="Login" Clicked="login_Clicked" BackgroundColor="Gray" TextColor="White" MinimumWidthRequest="300"/>
-            <Label Text="New? Create Account" TextColor="Gray" HorizontalTextAlignment="Center"/>
+            <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
 
 
+            <Button 
+                HorizontalOptions="Center"
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="login"
+                Text="Login"
+                Clicked="login_Clicked">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_lock_black_24dp.png"                     
+                                Android="ic_lock_black_24dp.png"                     
+                               />
 
-
-
-
-
+                </Button.Image>
+               
+            </Button>
+          
         </StackLayout>
-        
-        
+
+   
     </ScrollView>
 
 </ContentPage>
