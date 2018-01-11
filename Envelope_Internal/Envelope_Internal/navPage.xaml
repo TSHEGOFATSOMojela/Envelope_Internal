@@ -4,46 +4,109 @@
              x:Class="Envelope_Internal.navPage"
              Title=" City of Ekurhuleni"
              BackgroundColor="White">
-    <StackLayout>
+    <ScrollView HorizontalOptions="CenterAndExpand">
+
+       
+            <StackLayout>
         
-    <Image  Margin="20" VerticalOptions="Start" HeightRequest="220" WidthRequest="220"  Source="Ekurhulen.png"/>
+    <Image  Margin="20" VerticalOptions="Start" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
         <StackLayout>
-            <AbsoluteLayout>
-                <Image Source="tourisim.png" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="Tourism"></Label>
-            </AbsoluteLayout>
-            <AbsoluteLayout>
-                <Image Source="settings.png" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked_1" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="settings"></Label>
-            </AbsoluteLayout>
 
-            <AbsoluteLayout>
-                <Image Source="reportIt.png" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked_2" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="report it"></Label>
-            </AbsoluteLayout>
+            <Button   
+                Clicked="Button_Clicked"
+                BackgroundColor="Gray"
+                 TextColor="White"
+                HeightRequest="40"
+                Text="m-healthy">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_local_hospital_2x.png"                     
+                                Android="ic_local_hospital_black_24dp.png"                     
+                               />
 
-            <AbsoluteLayout>
-                <Image Source="general.png" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked_3" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="General"></Label>
-            </AbsoluteLayout>
-            <AbsoluteLayout>
-                <Image Source="siyakhoka.jpg" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked_4" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="e-Siyakhokha"></Label>
-            </AbsoluteLayout>
+                </Button.Image>
 
-            <AbsoluteLayout>
-                <Image Source="requestIt.png" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional"/>
-                <Button Clicked="Button_Clicked_5" AbsoluteLayout.LayoutBounds="0.2,0.2,35,35" AbsoluteLayout.LayoutFlags="PositionProportional" BorderColor="Transparent" BackgroundColor="Transparent" Command="{Binding AlertMeCommand}"/>
-                <Label Text="request it"></Label>
-            </AbsoluteLayout>
-
+            </Button>
 
         </StackLayout>
-  
-    </StackLayout>
+            <StackLayout>
+
+                <Button   
+                Clicked="Button_Clicked"
+                BackgroundColor="Gray"
+                 TextColor="White"
+                 HeightRequest="40"
+                Text="indigent">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_business_center.png"                     
+                                Android="ic_business_center_black_24dp.png"                     
+                               />
+
+                    </Button.Image>
+
+                </Button>
+
+            </StackLayout>
+            <StackLayout>
+
+                <Button   
+                Clicked="Button_Clicked"
+                TextColor="White"
+                HeightRequest="40"
+                BackgroundColor="Gray"
+                Text="HR">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_assignment_2x.png"                     
+                                Android="ic_assignment_black_24dp.png"                     
+                               />
+
+                    </Button.Image>
+
+                </Button>
+
+            </StackLayout>
+
+            <StackLayout>
+
+                <Button   
+                Clicked="Button_Clicked"
+                TextColor="White"    
+                HeightRequest="40"
+                BackgroundColor="Gray"
+                Text="Log Call">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                 iOS="ic_call_2x.png"                     
+                                Android="ic_call_black_24dp.png"                     
+                               />
+
+                    </Button.Image>
+
+                </Button>
+
+            </StackLayout>
+            <StackLayout>
+
+                <Button   
+                Clicked="Button_Clicked"
+                HeightRequest="40"
+                TextColor="White"
+                BackgroundColor="Gray"
+                Text="Events">
+                    <Button.Image>
+                        <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_event_note_2x.png"                     
+                                Android="ic_event_note_black_24dp.png"                      
+                               />
+
+                    </Button.Image>
+
+                </Button>
+
+            </StackLayout>
+
+        </StackLayout>
+  </ScrollView>
 </ContentPage>
