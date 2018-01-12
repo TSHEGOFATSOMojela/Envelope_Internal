@@ -5,6 +5,24 @@
              Title=" City of Ekurhuleni"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              BackgroundColor="White">
+               <ContentPage.ToolbarItems>
+    <ToolbarItem Name="_General"
+                     Order="Secondary"
+                     Priority="0"
+                     Text="General"
+                     Clicked="TapGestureRecognizer_Tapped_1"/>
+
+
+    <ToolbarItem Name="_Settings"
+                     Order="Secondary"
+                     Text="Settings" Priority="1"
+                     Clicked="TapGestureRecognizer_Tapped_2"/>
+                   
+        <ToolbarItem Name="_Log out"
+                     Order="Secondary"
+                     Text="Log out" Priority="1"
+                     Clicked="TapGestureRecognizer_Tapped_3"/>
+    </ContentPage.ToolbarItems> 
     <ScrollView HorizontalOptions="CenterAndExpand">
 
 
@@ -13,6 +31,24 @@
             <Image  Margin="20" HorizontalOptions="Start" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
 
             <StackLayout Orientation="Horizontal">
+                <StackLayout>
+
+                    <controls:CircleImage  
+                    Source="tourisim.png"
+                    WidthRequest="40" 
+                    HeightRequest="40" 
+                    TranslationX="15" 
+                    TranslationY="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="TapGestureRecognizer_Tapped_3"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+
+                    </controls:CircleImage>
+                    <Label Text="tourisim" TranslationX="15"  TranslationY="30"/>
+                </StackLayout>
+                
                 <StackLayout>
 
                     <controls:CircleImage  
