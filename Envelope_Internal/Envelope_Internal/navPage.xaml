@@ -3,123 +3,69 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.navPage"
              Title=" City of Ekurhuleni"
+             xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              BackgroundColor="White">
     <ScrollView HorizontalOptions="CenterAndExpand">
 
-       
-            <StackLayout>
-        
-    <Image  Margin="20" VerticalOptions="Start" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
+
         <StackLayout>
 
-            <Button   
-                Clicked="Button_Clicked"
-                BackgroundColor="Gray"
-                 TextColor="White"
-                HeightRequest="40"
-                Text="m-healthy">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="ic_local_hospital_2x.png"                     
-                                Android="ic_local_hospital_black_24dp.png"                     
-                               />
+            <Image  Margin="20" HorizontalOptions="Start" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
 
-                </Button.Image>
+            <StackLayout Orientation="Horizontal">
+                <StackLayout>
 
-            </Button>
+                    <controls:CircleImage  
+                    Source="siyakhoka.png"
+                    WidthRequest="40" 
+                    HeightRequest="40" 
+                    TranslationX="15" 
+                    TranslationY="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="TapGestureRecognizer_Tapped"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
 
+                    </controls:CircleImage>
+                    <Label Text="Indigent" TranslationX="15"  TranslationY="30"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <controls:CircleImage  
+                    Source="settings.png"
+                    WidthRequest="40" 
+                    HeightRequest="40" 
+                    TranslationX="15" 
+                    TranslationY="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="TapGestureRecognizer_Tapped_1"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+
+                    </controls:CircleImage>
+                    <Label Text="Settings" TranslationX="15"  TranslationY="30"/>
+                </StackLayout>
+
+                <StackLayout>
+                    <controls:CircleImage  
+                    Source="requestIt.png"
+                    WidthRequest="40" 
+                    HeightRequest="40" 
+                    TranslationX="15" 
+                    TranslationY="30">
+                        <Image.GestureRecognizers>
+                            <TapGestureRecognizer 
+                                Tapped="TapGestureRecognizer_Tapped_2"
+                                NumberOfTapsRequired="1" />
+                        </Image.GestureRecognizers>
+
+                    </controls:CircleImage>
+                    <Label Text="Events" TranslationX="15"  TranslationY="30"/>
+                </StackLayout>
+            </StackLayout>
         </StackLayout>
-            <StackLayout>
+    </ScrollView>
 
-                <Button   
-                Clicked="Button_Clicked"
-                BackgroundColor="Gray"
-                 TextColor="White"
-                 HeightRequest="40"
-                Text="indigent">
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="ic_business_center.png"                     
-                                Android="ic_business_center_black_24dp.png"                     
-                               />
-
-                    </Button.Image>
-
-                </Button>
-
-            </StackLayout>
-            <StackLayout>
-
-                <Button   
-                Clicked="Button_Clicked"
-                TextColor="White"
-                HeightRequest="40"
-                BackgroundColor="Gray"
-                Text="HR">
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="ic_assignment_2x.png"                     
-                                Android="ic_assignment_black_24dp.png"                     
-                               />
-
-                    </Button.Image>
-
-                </Button>
-
-            </StackLayout>
-
-            <StackLayout>
-
-                <Button   
-                Clicked="Button_Clicked"
-                TextColor="White"    
-                HeightRequest="40"
-                BackgroundColor="Gray"
-                Text="Log Call">
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                 iOS="ic_call_2x.png"                     
-                                Android="ic_call_black_24dp.png"                     
-                               />
-
-                    </Button.Image>
-
-                </Button>
-
-            </StackLayout>
-            <StackLayout>
-
-                <Button   
-                Clicked="Button_Clicked"
-                HeightRequest="40"
-                TextColor="White"
-                BackgroundColor="Gray"
-                Text="Events">
-                    <Button.Image>
-                        <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="ic_event_note_2x.png"                     
-                                Android="ic_event_note_black_24dp.png"                      
-                               />
-
-                    </Button.Image>
-
-                </Button>
-
-            </StackLayout>
-          
-
-
-
-
-
-
-
-
-
-
-
-
-
-        </StackLayout>
-  </ScrollView>
 </ContentPage>
