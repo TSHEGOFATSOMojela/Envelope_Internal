@@ -39,5 +39,23 @@ namespace Envelope_Internal
         {
             await Navigation.PushAsync(new MainPage());
         }
+
+        private async void OnGeneralClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+        private async void GeneralClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new GeneralPage());
+
+        }
+        private async void OnSettingsClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SettingsPage());
+        }
+        private async void OnIndigentClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new IndigentPage());
+        }
     }
 }
