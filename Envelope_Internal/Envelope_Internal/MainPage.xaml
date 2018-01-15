@@ -20,7 +20,7 @@
 
             <Button 
                 HorizontalOptions="Center"
-                BackgroundColor="Gray" 
+                BackgroundColor="DarkSlateBlue" 
                 TextColor="White"
                 x:Name="login"
                 Text="Login"
