@@ -7,6 +7,14 @@
             <Label Text="Welcome to General"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Balance Enquiry"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="BalanceEnquiryClicked"/>
+            <Button Text="Query Case"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="QueryCaseClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

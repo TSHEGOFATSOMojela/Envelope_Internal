@@ -7,6 +7,19 @@
             <Label Text="Welcome to Settings"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            
+            <Button Text="Edit Profile"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="ProfileClicked"/>
+            <Button Text="Preferences"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="PreferencesClicked"/>
+            <Button Text="Change Password"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="PasswordClicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

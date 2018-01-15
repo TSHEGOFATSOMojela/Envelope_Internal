@@ -16,5 +16,17 @@ namespace Envelope_Internal
 		{
 			InitializeComponent ();
 		}
-	}
+        private async void ProfileClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ProfilePage());
+        }
+        private async void PreferencesClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PreferencesPages());
+        }
+        private async void PasswordClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new PasswordPage());
+        }
+    }
 }
