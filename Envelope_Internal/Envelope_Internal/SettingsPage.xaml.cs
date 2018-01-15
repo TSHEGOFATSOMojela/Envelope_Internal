@@ -15,6 +15,22 @@ namespace Envelope_Internal
 		public SettingsPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+            SettingListView.ItemsSource = new List<settingLv>
+            {
+                new settingLv
+                { SettingOptions = "Edit Profile"},
+                new settingLv
+                { SettingOptions =   "Preferences"},
+                new settingLv
+                { SettingOptions = "Change Password"}
+
+            };
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+    }
 }

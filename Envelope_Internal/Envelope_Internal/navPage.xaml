@@ -11,18 +11,18 @@
                      Order="Secondary"
                      Priority="0"
                      Text="General"
-                     Clicked="TapGestureRecognizer_Tapped_1"/>
+                     Clicked="GeneralClicked"/>
 
 
     <ToolbarItem Name="_Settings"
                      Order="Secondary"
                      Text="Settings" Priority="1"
-                     Clicked="TapGestureRecognizer_Tapped_2"/>
+                     Clicked="OnSettingsClicked"/>
                    
         <ToolbarItem Name="_Log out"
                      Order="Secondary"
                      Text="Log out" Priority="1"
-                     Clicked="TapGestureRecognizer_Tapped_3"/>
+                     Clicked="TapGestureRecognizer_Tapped"/>
     </ContentPage.ToolbarItems> 
     <ScrollView>
      
@@ -43,7 +43,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer
-                                Tapped="TapGestureRecognizer_Tapped_3"
+                                Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
                         
@@ -63,7 +63,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer 
-                                Tapped="TapGestureRecognizer_Tapped"
+                                Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
 
@@ -80,7 +80,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer 
-                                Tapped="TapGestureRecognizer_Tapped_2"
+                                Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
 
@@ -103,7 +103,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer 
-                                Tapped="TapGestureRecognizer_Tapped_2"
+                                Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
 
@@ -121,7 +121,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer 
-                                Tapped="TapGestureRecognizer_Tapped_2"
+                                Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
 
@@ -129,18 +129,6 @@
                     <Label Text="Events" TranslationX="15"  TranslationY="30"/>
                 </StackLayout>
             </StackLayout>
-            <Button Text="General"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                Clicked="GeneralClicked"/>
-            <Button Text="Settings"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                Clicked="OnSettingsClicked"/>
-            <Button Text="Indigent"
-                HorizontalOptions="Center"
-                VerticalOptions="CenterAndExpand"
-                Clicked="OnIndigentClicked"/>
 
         </StackLayout>
     </ScrollView>

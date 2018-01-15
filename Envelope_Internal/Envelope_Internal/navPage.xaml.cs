@@ -22,28 +22,9 @@ namespace Envelope_Internal
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new IndigentPage());
-        }
-
-        private async void TapGestureRecognizer_Tapped_1(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new navPage());
-        }
-
-        private async void TapGestureRecognizer_Tapped_2(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new navPage());
-        }
-
-        private async void TapGestureRecognizer_Tapped_3(object sender, EventArgs e)
-        {
             await Navigation.PushAsync(new MainPage());
         }
 
-        private async void OnGeneralClicked(object sender, EventArgs e)
-        {
-            await Navigation.PushAsync(new MainPage());
-        }
         private async void GeneralClicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new GeneralPage());

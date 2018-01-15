@@ -15,6 +15,21 @@ namespace Envelope_Internal
 		public GeneralPage ()
 		{
 			InitializeComponent ();
-		}
-	}
+
+            GeneralListView.ItemsSource = new List<GeneralLv>
+            {
+                new GeneralLv
+                { GeneralOptions = "Balance Enquiry"},
+                new GeneralLv
+                { GeneralOptions =   "Query Case"}
+
+
+        };
+        }
+
+        private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new MainPage());
+        }
+    }
 }

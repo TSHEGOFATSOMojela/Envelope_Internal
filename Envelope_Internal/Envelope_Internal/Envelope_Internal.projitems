@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)GeneralLv.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)GeneralPage.xaml.cs">
       <DependentUpon>GeneralPage.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -31,6 +32,7 @@
       <DependentUpon>navPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)settingLv.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
       <SubType>Code</SubType>
