@@ -129,6 +129,19 @@
                     <Label Text="Events" TranslationX="15"  TranslationY="30"/>
                 </StackLayout>
             </StackLayout>
+            <Button Text="General"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="GeneralClicked"/>
+            <Button Text="Settings"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnSettingsClicked"/>
+            <Button Text="Indigent"
+                HorizontalOptions="Center"
+                VerticalOptions="CenterAndExpand"
+                Clicked="OnIndigentClicked"/>
+
         </StackLayout>
     </ScrollView>
 
