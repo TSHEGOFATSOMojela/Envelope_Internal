@@ -16,26 +16,10 @@
                   HasUnevenRows="True">
             <ListView.ItemTemplate>
                 <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical" Padding="20">
-                            <StackLayout Orientation="Horizontal">
-                                <controls:CircleImage  
-                                    Source="siyakhoka.png"
-                                    WidthRequest="40" 
-                                    HeightRequest="40">
-
-
-                                </controls:CircleImage>
-                                <Label Text="{Binding GeneralOptions}" Margin="10" VerticalTextAlignment="End">
-                                    <Label.GestureRecognizers>
-                                        <TapGestureRecognizer
-                                       Tapped="TapGestureRecognizer_Tapped"
-                                        NumberOfTapsRequired="1" />
-                                    </Label.GestureRecognizers>
-                                </Label>
-                            </StackLayout>
-                        </StackLayout>
-                    </ViewCell>
+                    <ImageCell
+                                    
+                                  Text="{Binding GeneralOptions}"  
+                                  ImageSource="{Binding ImageUrl}"/>
                 </DataTemplate>
 
             </ListView.ItemTemplate>
