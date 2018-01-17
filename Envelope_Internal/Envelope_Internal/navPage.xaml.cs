@@ -38,5 +38,9 @@ namespace Envelope_Internal
         {
             await Navigation.PushAsync(new IndigentPage());
         }
+        private async void OnMhealthClicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Test());
+        }
     }
 }
