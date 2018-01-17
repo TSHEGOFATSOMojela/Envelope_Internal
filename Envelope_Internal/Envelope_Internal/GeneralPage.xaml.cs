@@ -19,9 +19,12 @@ namespace Envelope_Internal
             GeneralListView.ItemsSource = new List<GeneralLv>
             {
                 new GeneralLv
-                { GeneralOptions = "Balance Enquiry"},
+                { GeneralOptions = "Balance Enquiry",
+                   ImageUrl="icon.png"},
                 new GeneralLv
-                { GeneralOptions =   "Query Case"}
+                { GeneralOptions =   "Query Case",
+                  ImageUrl="requestIt.png"
+                }
 
 
         };

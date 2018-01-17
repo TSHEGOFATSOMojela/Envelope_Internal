@@ -19,11 +19,14 @@ namespace Envelope_Internal
             SettingListView.ItemsSource = new List<settingLv>
             {
                 new settingLv
-                { SettingOptions = "Edit Profile"},
+                { SettingOptions = "Edit Profile",
+                  ImageUrl="icon.png"},
                 new settingLv
-                { SettingOptions =   "Preferences"},
+                { SettingOptions =   "Preferences",
+                   ImageUrl="reportIt.png"},
                 new settingLv
-                { SettingOptions = "Change Password"}
+                { SettingOptions = "Change Password",
+                   ImageUrl="tourisim.png"}
 
             };
         }
