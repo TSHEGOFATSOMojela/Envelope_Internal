@@ -5,6 +5,9 @@
              x:Class="Envelope_Internal.GeneralPage"
              Title="          General">
     <ContentPage.ToolbarItems>
+        <ToolbarItem Icon="general.png"
+                     Priority="-1"
+                     Order="Default"/>
 
         <ToolbarItem Name="_Log out"
                      Order="Secondary"

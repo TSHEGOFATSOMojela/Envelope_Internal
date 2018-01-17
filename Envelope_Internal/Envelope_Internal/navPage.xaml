@@ -43,7 +43,7 @@
                     BackgroundColor="DarkSlateBlue">
                         <Image.GestureRecognizers>
                             <TapGestureRecognizer
-                                Tapped="OnIndigentClicked"
+                                Tapped="OnMhealthClicked"
                                 NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
                         
