@@ -10,16 +10,15 @@ using Xamarin.Forms.Xaml;
 namespace Envelope_Internal
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class IndigentPage : ContentPage
+	public partial class Clsed : ContentPage
 	{
-		public IndigentPage ()
+		public Clsed ()
 		{
 			InitializeComponent ();
 		}
-
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Assignmt());
+            await Navigation.PushAsync(new MainPage());
         }
     }
 }
