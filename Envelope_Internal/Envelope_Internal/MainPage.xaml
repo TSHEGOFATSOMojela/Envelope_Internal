@@ -10,9 +10,7 @@
         
         <StackLayout>
 
-
-            <Image  Margin="20" VerticalOptions="Start" HeightRequest="180" WidthRequest="180"  Source="Ekurhulen.png"/>
-
+            <Image  Margin="20" HorizontalOptions="Center" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
             <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
 
             <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
@@ -20,7 +18,7 @@
 
             <Button 
                 HorizontalOptions="Center"
-                BackgroundColor="DarkSlateBlue" 
+                BackgroundColor="DarkGray" 
                 TextColor="White"
                 x:Name="login"
                 Text="Login"
