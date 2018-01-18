@@ -16,12 +16,13 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)GeneralLv.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)GeneralPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)General\GeneralLv.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)General\GeneralPage.xaml.cs">
       <DependentUpon>GeneralPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)IndigentPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentListView.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentPage.xaml.cs">
       <DependentUpon>IndigentPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -32,13 +33,9 @@
       <DependentUpon>navPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)settingLv.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)SettingsPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\settingLv.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Settings\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Test.xaml.cs">
-      <DependentUpon>Test.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
@@ -49,27 +46,25 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)GeneralPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)General\GeneralPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)SettingsPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Settings\SettingsPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)IndigentPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\IndigentPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Test.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
+    <Folder Include="$(MSBuildThisFileDirectory)General\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Settings\" />
   </ItemGroup>
 </Project>
