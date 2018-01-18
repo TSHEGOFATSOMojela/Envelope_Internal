@@ -2,18 +2,29 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.IndigentPage"
-             Title="             Indigent">
+             Title="Sign In"
+             NavigationPage.HasBackButton="False">
 
     <ContentPage.ToolbarItems>
-
+ 
         <ToolbarItem Name="_Log out"
                      Order="Secondary"
                      Text="Log out" Priority="1"
                      Clicked="TapGestureRecognizer_Tapped"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
+        <Frame>
         <StackLayout>
+
+            <Entry x:Name="username" Placeholder="User ID"></Entry>
+
+            <Entry x:Name="password" IsPassword="True" Placeholder="Password"></Entry>
+
             
+            <Button Text="login" Clicked="TapGestureRecognizer_Tapped" BackgroundColor="DarkGreen" TextColor="White"> </Button>
+
+
         </StackLayout>
+        </Frame>
     </ContentPage.Content>
 </ContentPage>
