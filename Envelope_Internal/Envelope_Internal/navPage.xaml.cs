@@ -10,7 +10,7 @@ using Xamarin.Forms.Xaml;
 namespace Envelope_Internal
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class navPage : ContentPage
+	public partial class navPage : MasterDetailPage
 	{
 		public navPage ()
 		{
@@ -40,7 +40,7 @@ namespace Envelope_Internal
         }
         private async void OnMhealthClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Test());
+            await Navigation.PushAsync(new IndigentPage());
         }
     }
 }

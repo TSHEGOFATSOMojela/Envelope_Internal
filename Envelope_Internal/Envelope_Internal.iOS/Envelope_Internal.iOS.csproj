@@ -220,6 +220,9 @@
   <ItemGroup>
     <BundleResource Include="Resources\ic_local_hospital_2x.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\splashScreen.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
 </Project>

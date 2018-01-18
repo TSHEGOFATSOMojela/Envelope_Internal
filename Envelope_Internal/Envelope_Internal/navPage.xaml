@@ -1,136 +1,166 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+<MasterDetailPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.navPage"
-             Title="                City of Ekurhuleni"
              NavigationPage.HasBackButton="False"
+             NavigationPage.HasNavigationBar="False"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              BackgroundColor="White">
-               <ContentPage.ToolbarItems>
-    <ToolbarItem Name="_General"
+    <MasterDetailPage.Master>
+        <ContentPage Title="Menu">
+            <StackLayout BackgroundColor="White">
+                <controls:CircleImage  
+                    Source="icon.png"
+                    WidthRequest="95" 
+                    HeightRequest="95" 
+                    TranslationX="15" 
+                    TranslationY="30"
+                    HorizontalOptions="Start"
+                    BackgroundColor="DarkGray"></controls:CircleImage>
+                
+                <Button Text="red" Clicked="GeneralClicked" HorizontalOptions="Start" TextColor="Gray" BackgroundColor="White"></Button>
+                <Button Text="black" HorizontalOptions="Start" TextColor="Gray" BackgroundColor="White" ></Button>
+                <Button Text="yellow" HorizontalOptions="Start" TextColor="Gray" BackgroundColor="White" ></Button>
+                <Button Text="green" HorizontalOptions="Start" TextColor="Gray" BackgroundColor="White"></Button>
+            </StackLayout>
+        </ContentPage>
+    </MasterDetailPage.Master>
+    
+        <MasterDetailPage.Detail>
+            <NavigationPage>
+                <x:Arguments>
+                    <ContentPage Title="City Of Ekurhuleni">
+                        
+                    <ContentPage.ToolbarItems>
+                     <ToolbarItem Name="_General"
                      Order="Secondary"
                      Priority="0"
                      Text="General"
                      Clicked="GeneralClicked"/>
 
 
-    <ToolbarItem Name="_Settings"
+                    <ToolbarItem Name="_Settings"
                      Order="Secondary"
                      Text="Settings" Priority="1"
                      Clicked="OnSettingsClicked"/>
-                   
-        <ToolbarItem Name="_Log out"
+
+                     <ToolbarItem Name="_Log out"
                      Order="Secondary"
                      Text="Log out" Priority="1"
                      Clicked="TapGestureRecognizer_Tapped"/>
-    </ContentPage.ToolbarItems> 
-    <ScrollView>
-     
+                    </ContentPage.ToolbarItems>
 
-        <StackLayout>
+                    <ScrollView>
+        <StackLayout BackgroundColor="White">
 
-            <Image  Margin="20" HorizontalOptions="Center" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
+             <Image  Margin="20" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120"  Source="Ekurhulen.png"/>
+                <StackLayout Orientation="Horizontal">
+                    <StackLayout Margin="15">
+                        <controls:CircleImage  
+                            Source="icon.png"
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            TranslationX="15" 
+                            TranslationY="30">
+                         <Image.GestureRecognizers>
+                           <TapGestureRecognizer
+                            Tapped="OnMhealthClicked"
+                            NumberOfTapsRequired="1" />
+                         </Image.GestureRecognizers>
+                         </controls:CircleImage>
+                          <Label Text="m-Health" TranslationX="15"  TranslationY="30"/>
+                    </StackLayout>
 
-            <StackLayout Orientation="Horizontal">
-                <StackLayout Margin="15">
-
-                    <controls:CircleImage  
-                    Source="tourisim.png"
-                    WidthRequest="40" 
-                    HeightRequest="40" 
-                    TranslationX="15" 
-                    TranslationY="30"
-                    BackgroundColor="DarkSlateBlue">
+                    <StackLayout  Margin="15">
+                        <controls:CircleImage  
+                            Source="icon.png"
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            TranslationX="15" 
+                            TranslationY="30">
                         <Image.GestureRecognizers>
-                            <TapGestureRecognizer
-                                Tapped="OnMhealthClicked"
-                                NumberOfTapsRequired="1" />
+                         <TapGestureRecognizer 
+                           Tapped="OnIndigentClicked"
+                           NumberOfTapsRequired="1" />
                         </Image.GestureRecognizers>
-                        
-
-                    </controls:CircleImage>
-                    <Label Text="m-Health" TranslationX="15"  TranslationY="30"/>
-                </StackLayout>
-
-                <StackLayout  Margin="15">
-
-                    <controls:CircleImage  
-                    Source="siyakhoka.png"
-                    WidthRequest="40" 
-                    HeightRequest="40" 
-                    TranslationX="15" 
-                    TranslationY="30"
-                    BackgroundColor="DarkSlateBlue">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer 
+                        </controls:CircleImage>
+                          <Label Text="Indigent" TranslationX="15"  TranslationY="30"/>
+                    </StackLayout>
+                    
+                    <StackLayout  Margin="15">
+                     <controls:CircleImage  
+                            Source="icon.png"
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            TranslationX="15" 
+                            TranslationY="30">
+                     <Image.GestureRecognizers>
+                      <TapGestureRecognizer 
+                            Tapped="OnIndigentClicked"
+                            NumberOfTapsRequired="1" />
+                             </Image.GestureRecognizers>
+                     </controls:CircleImage>
+                           <Label Text="Events" TranslationX="15"  TranslationY="30"/>
+                    </StackLayout>
+                    
+                    </StackLayout>
+                        <StackLayout Orientation="Horizontal">
+                     
+                        <StackLayout  Margin="20">
+                         <controls:CircleImage  
+                                Source="icon.png"
+                                WidthRequest="40" 
+                                HeightRequest="40" 
+                                TranslationX="15" 
+                                TranslationY="30">
+                         <Image.GestureRecognizers>
+                         <TapGestureRecognizer 
                                 Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
+                          </Image.GestureRecognizers>
+                            </controls:CircleImage>
+                             <Label Text="Log Call" TranslationX="15"  TranslationY="30"/>
+                             </StackLayout>
 
-                    </controls:CircleImage>
-                    <Label Text="Indigent" TranslationX="15"  TranslationY="30"/>
-                </StackLayout>
-                <StackLayout  Margin="15">
-                    <controls:CircleImage  
-                    Source="requestIt.png"
-                    WidthRequest="40" 
-                    HeightRequest="40" 
-                    TranslationX="15" 
-                    TranslationY="30"
-                    BackgroundColor="DarkSlateBlue">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer 
+                         <StackLayout  Margin="20">
+                          <controls:CircleImage  
+                                Source="icon.png"
+                                WidthRequest="40" 
+                                HeightRequest="40" 
+                                TranslationX="15" 
+                                TranslationY="30">
+                           <Image.GestureRecognizers>
+                           <TapGestureRecognizer 
                                 Tapped="OnIndigentClicked"
                                 NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
+                            </Image.GestureRecognizers>
+                                </controls:CircleImage>
+                                 <Label Text="  HR" TranslationX="15"  TranslationY="30"/>
+                         </StackLayout>
+                         
+                         <StackLayout  Margin="20">
+                          <controls:CircleImage  
+                            Source="icon.png"
+                            WidthRequest="40" 
+                            HeightRequest="40" 
+                            TranslationX="15" 
+                            TranslationY="30">
+                          <Image.GestureRecognizers>
+                           <TapGestureRecognizer 
+                              Tapped="OnIndigentClicked"
+                              NumberOfTapsRequired="1" />
+                              </Image.GestureRecognizers>
+                             </controls:CircleImage>
+                           <Label Text="Request" TranslationX="15"  TranslationY="30"/>
+                           </StackLayout>
+                          </StackLayout>
 
-                    </controls:CircleImage>
-                    <Label Text="HR" TranslationX="15"  TranslationY="30"/>
-                </StackLayout>
-                
-                
-            </StackLayout>
+                    </StackLayout>
+            </ScrollView>
+</ContentPage> 
+                </x:Arguments>
+            </NavigationPage>  
+        </MasterDetailPage.Detail>
 
-            <StackLayout Orientation="Horizontal">
-
-                <StackLayout  Margin="15">
-                    <controls:CircleImage  
-                    Source="requestIt.png"
-                    WidthRequest="40" 
-                    HeightRequest="40" 
-                    TranslationX="15" 
-                    TranslationY="30"
-                    BackgroundColor="DarkSlateBlue">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer 
-                                Tapped="OnIndigentClicked"
-                                NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-
-                    </controls:CircleImage>
-                    <Label Text="Log Call" TranslationX="15"  TranslationY="30"/>
-                </StackLayout>
-
-                <StackLayout  Margin="15">
-                    <controls:CircleImage  
-                    Source="requestIt.png"
-                    WidthRequest="40" 
-                    HeightRequest="40" 
-                    TranslationX="15" 
-                    TranslationY="30"
-                    BackgroundColor="DarkSlateBlue">
-                        <Image.GestureRecognizers>
-                            <TapGestureRecognizer 
-                                Tapped="OnIndigentClicked"
-                                NumberOfTapsRequired="1" />
-                        </Image.GestureRecognizers>
-
-                    </controls:CircleImage>
-                    <Label Text="Events" TranslationX="15"  TranslationY="30"/>
-                </StackLayout>
-            </StackLayout>
-
-        </StackLayout>
-    </ScrollView>
-
-</ContentPage>
+    
+</MasterDetailPage>
