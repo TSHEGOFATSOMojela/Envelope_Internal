@@ -3,25 +3,40 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.IndigentPage"
              Title="Sign In"
-             NavigationPage.HasBackButton="False">
+             NavigationPage.HasBackButton="False"
+             NavigationPage.BarTextColor="Green">
+    
 
     <ContentPage.ToolbarItems>
+      
  
-        <ToolbarItem Name="_Log out"
-                     Order="Secondary"
-                     Text="Log out" Priority="1"
-                     Clicked="TapGestureRecognizer_Tapped"/>
     </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Frame>
         <StackLayout>
 
-            <Entry x:Name="username" Placeholder="User ID"></Entry>
+            <Entry x:Name="username"
+                   Placeholder="User ID"
+                   HorizontalTextAlignment="Start"
+                   Margin="20">
+                
+                
+            </Entry>
 
-            <Entry x:Name="password" IsPassword="True" Placeholder="Password"></Entry>
+            <Entry x:Name="password"
+                   IsPassword="True"
+                   Placeholder="Password"
+                   HorizontalTextAlignment="Start">
+                
+            </Entry>
 
-            
-            <Button Text="login" Clicked="TapGestureRecognizer_Tapped" BackgroundColor="DarkGreen" TextColor="White"> </Button>
+
+                <Button Text="login"
+                        Clicked="TapGestureRecognizer_Tapped"
+                        BackgroundColor="DarkGreen"
+                        TextColor="White">
+                    
+                </Button>
 
 
         </StackLayout>

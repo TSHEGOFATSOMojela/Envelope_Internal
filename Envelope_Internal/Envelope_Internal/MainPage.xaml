@@ -4,7 +4,8 @@
              xmlns:local="clr-namespace:Envelope_Internal"
              x:Class="Envelope_Internal.MainPage"
              BackgroundColor="White"
-             NavigationPage.HasNavigationBar="False">
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.BarTextColor = "White">
 
     <ScrollView HorizontalOptions="CenterAndExpand">
         

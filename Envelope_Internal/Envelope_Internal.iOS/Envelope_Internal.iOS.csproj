@@ -223,6 +223,12 @@
   <ItemGroup>
     <BundleResource Include="Resources\splashScreen.png" />
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8-user-filled-50.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\icons8-lock-filled-50.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
 </Project>

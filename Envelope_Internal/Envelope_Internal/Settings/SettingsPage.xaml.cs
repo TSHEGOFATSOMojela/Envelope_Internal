@@ -18,15 +18,10 @@ namespace Envelope_Internal
 
             SettingListView.ItemsSource = new List<settingLv>
             {
-                new settingLv
-                { SettingOptions = "Edit Profile",
-                  ImageUrl="icon.png"},
+             
                 new settingLv
                 { SettingOptions =   "Preferences",
-                   ImageUrl="reportIt.png"},
-                new settingLv
-                { SettingOptions = "Change Password",
-                   ImageUrl="tourisim.png"}
+                   ImageUrl="ic_lock_black_24dp.png"}
 
             };
         }
