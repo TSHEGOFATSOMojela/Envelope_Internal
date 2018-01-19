@@ -15,7 +15,8 @@ namespace Envelope_Internal
 		public IndigentPage ()
 		{
 			InitializeComponent ();
-		}
+        
+        }
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {

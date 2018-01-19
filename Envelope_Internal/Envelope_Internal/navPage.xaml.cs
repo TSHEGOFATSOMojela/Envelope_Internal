@@ -15,7 +15,19 @@ namespace Envelope_Internal
 		public navPage ()
 		{
 			InitializeComponent ();
-		}
+
+            SettingListView.ItemsSource = new List<settingLv>
+            {
+                
+
+                new settingLv
+                { SettingOptions = "Change Password",
+                   ImageUrl="iconslock.png"}
+
+            };
+
+            
+        }
        
        
         

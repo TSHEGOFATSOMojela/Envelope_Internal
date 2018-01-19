@@ -13,7 +13,8 @@ namespace Envelope_Internal
 		public MainPage()
 		{
 			InitializeComponent();
-		}
+            ;
+        }
 
         private async void login_Clicked(object sender, EventArgs e)
         {

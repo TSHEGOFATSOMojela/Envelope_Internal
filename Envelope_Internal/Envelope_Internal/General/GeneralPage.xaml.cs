@@ -20,10 +20,10 @@ namespace Envelope_Internal
             {
                 new GeneralLv
                 { GeneralOptions = "Balance Enquiry",
-                   ImageUrl="icon.png"},
+                   ImageUrl="ic_lock_black_24dp.png"},
                 new GeneralLv
                 { GeneralOptions =   "Query Case",
-                  ImageUrl="requestIt.png"
+                  ImageUrl="ic_lock_black_24dp.png"
                 }
 
 
