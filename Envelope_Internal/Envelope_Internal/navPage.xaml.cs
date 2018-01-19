@@ -52,7 +52,7 @@ namespace Envelope_Internal
         }
         private async void OnMhealthClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new LandingPageAssignment());
+            await Navigation.PushAsync(new LandAssign());
         }
     }
 }
