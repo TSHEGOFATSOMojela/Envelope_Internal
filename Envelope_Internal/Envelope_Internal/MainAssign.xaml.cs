@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Envelope_Internal
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class LandingPageAssignment : ContentPage
+	public partial class MainAssign : ContentPage
 	{
-		public LandingPageAssignment ()
+		public MainAssign ()
 		{
 			InitializeComponent ();
 		}

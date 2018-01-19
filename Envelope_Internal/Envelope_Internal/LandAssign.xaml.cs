@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace Envelope_Internal
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class MainAssignments : ContentPage
+	public partial class LandAssign : ContentPage
 	{
-		public MainAssignments ()
+		public LandAssign ()
 		{
 			InitializeComponent ();
 		}

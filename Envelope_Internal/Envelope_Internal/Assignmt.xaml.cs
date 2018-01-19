@@ -15,7 +15,7 @@ namespace Envelope_Internal
 	{
         void Assignments_Tapped(object sender, EventArgs e)
         {
-            var page = new MainAssignments();
+            var page = new MainAssign();
             PlaceHolder.Content = page.Content;
         }
 
