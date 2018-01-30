@@ -7,16 +7,14 @@ using System.Threading.Tasks;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace Envelope_Internal
+namespace Envelope_Internal.Indigent.Assignment
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Rejctd : ContentPage
+	public partial class Clsed : ContentPage
 	{
-		public Rejctd ()
+		public Clsed ()
 		{
 			InitializeComponent ();
 		}
-
-      
-    }
+	}
 }
