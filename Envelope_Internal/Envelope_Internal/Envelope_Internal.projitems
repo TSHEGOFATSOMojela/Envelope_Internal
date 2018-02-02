@@ -16,7 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Accepted.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Accepted\Accepted.xaml.cs">
       <DependentUpon>Accepted.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -29,11 +29,12 @@
       <DependentUpon>GeneralPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Clsed.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Closed\Clsed.xaml.cs">
       <DependentUpon>Clsed.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Rejctd.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\UserLogin.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Rejected\Rejctd.xaml.cs">
       <DependentUpon>Rejctd.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
@@ -90,6 +91,9 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Indigent\Accepted\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Indigent\Closed\" />
+    <Folder Include="$(MSBuildThisFileDirectory)Indigent\Rejected\" />
     <Folder Include="$(MSBuildThisFileDirectory)Settings\" />
   </ItemGroup>
   <ItemGroup>
@@ -111,19 +115,19 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Accepted.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Accepted\Accepted.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Rejctd.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Rejected\Rejctd.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Clsed.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Closed\Clsed.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>

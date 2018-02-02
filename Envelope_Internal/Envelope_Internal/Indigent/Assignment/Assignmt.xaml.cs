@@ -13,10 +13,10 @@ using Xamarin.Forms.Xaml;
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
 
-	public partial class Assignmt : TabbedPage
+	public partial class Assignmt : ContentPage
     { 
         
-        /*
+       
         void Assignments_Tapped(object sender, EventArgs e)
         {
            var page = new MainAssign();
@@ -27,7 +27,7 @@ using Xamarin.Forms.Xaml;
        
         void Accepted_Tapped(object sender, EventArgs e)
         {
-            var page = new Accptd();
+            var page = new Accepted();
            PlaceHolder.Content = page.Content;
         }
 
@@ -49,7 +49,7 @@ using Xamarin.Forms.Xaml;
             InitializeComponent();
 
         }
-        */
+      
 
     }
 }

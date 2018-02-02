@@ -21,31 +21,7 @@ namespace Envelope_Internal.Indigent.Assignment
             GetIndigentDetailsAsync();
         }
 
-        /*
-           public async void GetJSON()
-           {
-
-           var client = new System.Net.Http.HttpClient();
-           HttpResponseMessage response = await client.GetAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
-
-           if (response.StatusCode == System.Net.HttpStatusCode.OK)
-           {
-               //Converting JSON Array Objects into generic list
-               HttpContent content = response.Content;
-               var IndigentJson = await content.ReadAsStringAsync();
-               var ObjIndigenttList = JsonConvert.DeserializeObject<List<Indigent>>(IndigentJson);
-               // Indigent.indigentApplicationDetails.indigentApplicationHeader.applicationRefNo
-               //Binding listview with server response 
-               ListView.ItemsSource = ObjIndigenttList[0].indigentApplicationDetails.indigentApplicationHeader.applicationRefNo;
-           }
-
-
-
-
-               }
-
-     */
-
+  
         HttpClient client = new HttpClient();
 
         public async Task<List<Indigents>> GetIndigentDetailsAsync()
