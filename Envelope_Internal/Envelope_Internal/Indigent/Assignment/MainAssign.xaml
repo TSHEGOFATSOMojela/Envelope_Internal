@@ -26,6 +26,9 @@
                                     <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
                                     <Label TextColor="White" Text="{Binding indigentApplicationDetails.householdDetail[0].personDetail.firstNames}"/>
                                     <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationDate}"/>
+                                    <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.addressLine1}"/>
+                                    <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.suburb}"/>
+                                    
                                 </StackLayout>
                                
 
