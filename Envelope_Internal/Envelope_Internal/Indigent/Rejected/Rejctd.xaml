@@ -4,7 +4,7 @@
              x:Class="Envelope_Internal.Indigent.Assignment.Rejctd">
     <ContentPage.Content>
         <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
+            <Label Text="Rejctd"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
         </StackLayout>

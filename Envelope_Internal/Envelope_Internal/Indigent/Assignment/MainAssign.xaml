@@ -4,6 +4,7 @@
              x:Class="Envelope_Internal.Indigent.Assignment.MainAssign"
              Title="Assignments"
              BackgroundColor="Gray">
+ 
     <Grid>
         <Grid>
             <Grid.RowDefinitions>
@@ -39,5 +40,5 @@
         </Grid>
         <ActivityIndicator x:Name="ProgressLoader" IsRunning="True"/>
     </Grid>
-
+      
 </ContentPage>

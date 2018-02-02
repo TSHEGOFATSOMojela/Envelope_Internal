@@ -5,7 +5,7 @@
              Title="Sign In"
              NavigationPage.HasBackButton="False"
              NavigationPage.BarTextColor="Green">
-    
+   
 
     <ContentPage.ToolbarItems>
       
@@ -32,7 +32,7 @@
 
 
                 <Button Text="login"
-                        Clicked="TapGestureRecognizer_Tapped"
+                        Clicked="Login_Tapped"
                         BackgroundColor="DarkGreen"
                         TextColor="White">
                     
@@ -42,4 +42,5 @@
         </StackLayout>
         </Frame>
     </ContentPage.Content>
+      
 </ContentPage>

@@ -6,7 +6,7 @@
              NavigationPage.HasNavigationBar="False"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
              BackgroundColor="White">
-    
+   
     <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="White">
             <StackLayout BackgroundColor="White">
@@ -129,7 +129,7 @@
                                 TranslationY="30">
                          <Image.GestureRecognizers>
                          <TapGestureRecognizer 
-                                Tapped="OnIndigentClicked"
+                                Tapped="called"
                                 NumberOfTapsRequired="1" />
                           </Image.GestureRecognizers>
                             </controls:CircleImage>
@@ -176,5 +176,5 @@
             </NavigationPage>  
         </MasterDetailPage.Detail>
 
-    
+      
 </MasterDetailPage>

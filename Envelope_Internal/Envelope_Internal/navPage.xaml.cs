@@ -55,5 +55,10 @@ namespace Envelope_Internal
         {
             await Navigation.PushAsync(new LandAssign());
         }
+
+        private async void called(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Assignmt());
+        }
     }
 }

@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Envelope_Internal.Indigent.Assignment.Accepted">
+
+    <ScrollView HorizontalOptions="CenterAndExpand">
+
+        <StackLayout>
+
+            <Button Text="Living Conditions" BackgroundColor="Blue" ></Button>
+            <Button Text="HouseHold Members" BackgroundColor="Blue"></Button>
+            <Button Text="Signatures" BackgroundColor="Blue"></Button>
+            <Button Text="Documents" BackgroundColor="Blue"></Button>
+
+        </StackLayout>
+
+
+    </ScrollView>
+</ContentPage>
