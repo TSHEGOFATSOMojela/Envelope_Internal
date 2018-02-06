@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using Envelope_Internal.Indigent.ViewModels;
 using Envelope_Internal.Indigent.Models;
+
 using System.Net.Http;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -12,7 +13,7 @@ using Xamarin.Forms.Xaml;
 
 namespace Envelope_Internal.Indigent.Assignment
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
+    [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class MainAssign : ContentPage
     {
         public MainAssign()
@@ -20,8 +21,14 @@ namespace Envelope_Internal.Indigent.Assignment
             InitializeComponent();
             GetIndigentDetailsAsync();
         }
+        
+        private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        {
 
-  
+            var itemSelectedData = e.SelectedItem as Indigents;
+            Navigation.PushAsync(new LandAssign(itemSelectedData));
+        }
+
         HttpClient client = new HttpClient();
 
         public async Task<List<Indigents>> GetIndigentDetailsAsync()
@@ -42,11 +49,7 @@ namespace Envelope_Internal.Indigent.Assignment
         }
 
 
-        private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            //var itemSelectedData = e.SelectedItem as Indigent;
-            //Navigation.PushAsync(new Page1(itemSelectedData));
-        }
+   
 
     }
 }

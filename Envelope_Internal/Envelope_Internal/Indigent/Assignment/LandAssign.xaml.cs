@@ -15,39 +15,17 @@ namespace Envelope_Internal.Indigent.Assignment
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class LandAssign : ContentPage
 	{
-		public LandAssign ()
-		{
-			InitializeComponent ();
-            GetIndigentDetailsAsync();
-        }
+        private Indigents itemSelectedData;
 
 
 
-        HttpClient client = new HttpClient();
-
-        public async Task<List<Indigents>> GetIndigentDetailsAsync()
+        public LandAssign(Indigents itemSelectedData)
         {
-
-            try
-            {
-                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
-                var IndigentDetails = JsonConvert.DeserializeObject<List<Indigents>>(response);
-                ListView.ItemsSource = IndigentDetails;
-
-                return IndigentDetails;
-            }
-            catch (System.Exception exception)
-            {
-                throw exception;
-            }
+            InitializeComponent();
+            BindingContext = itemSelectedData;
         }
 
 
-        private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
-        {
-            //var itemSelectedData = e.SelectedItem as Indigent;
-            //Navigation.PushAsync(new Page1(itemSelectedData));
-        }
 
 
     }
