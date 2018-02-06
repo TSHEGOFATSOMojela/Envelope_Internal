@@ -26,7 +26,8 @@ namespace Envelope_Internal.Indigent.Assignment
         {
 
             var itemSelectedData = e.SelectedItem as Indigents;
-            Navigation.PushAsync(new LandAssign(itemSelectedData));
+
+            Navigation.PushAsync(new Page1(itemSelectedData));
         }
 
         HttpClient client = new HttpClient();
