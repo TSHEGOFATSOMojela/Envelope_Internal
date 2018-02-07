@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Envelope_Internal.Indigent.Assignment.Page2"
+             xmlns:pages="clr-namespace:Envelope_Internal.Indigent.Assignment"
+             Title="TabbedPage">
+  <!--Pages can be added as references or inline-->
+    <pages:MainAssign/>
+    <pages:Accepted/>
+    <pages:Rejctd/>
+    <pages:Clsed/>
+</TabbedPage>

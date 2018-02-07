@@ -32,7 +32,7 @@ namespace Envelope_Internal.Indigent
             if (root.IsCorrect == "Yes")
             {
                 await DisplayAlert("Login success", "You are login", "Okay", "Cancel");
-                await Navigation.PushAsync(new Assignmt());
+                await Navigation.PushAsync(new Page2());
             }
             else
             {
