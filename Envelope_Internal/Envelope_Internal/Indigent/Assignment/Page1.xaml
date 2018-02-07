@@ -2,8 +2,47 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Assignment.Page1">
-    <ContentPage.Content>
-      
-            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.emmAccountNo}"></Label>
-    </ContentPage.Content>
+
+    <ScrollView>
+        <StackLayout Orientation="Vertical">
+            <Label TextColor="White" Text="Application Reference No"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
+
+            <Label TextColor="White" Text="EMM Account Number"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.emmAccountNo}"/>
+
+            <Label TextColor="White" Text="Application Type"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicantKind}"/>
+            <Label TextColor="White" Text="Indigent Application Type"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationType}"/>
+            <Label TextColor="White" Text="Application Date"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationDate }"/>
+            <Label TextColor="White" Text="Customer Care Area"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationCCC}"/>
+            <Label TextColor="White" Text="Id Number"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.idNo}"/>
+            <Label TextColor="White" Text="Passport Number"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.householdDetail.personDetail.passportNo}"/>
+            <Label TextColor="White" Text="Title"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.title}"/>
+            <Label TextColor="White" Text="Initials"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.initials}"/>
+            <Label TextColor="White" Text="first Name"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.firstNames}"/>
+            <Label TextColor="White" Text="Last Name"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.surname}"/>
+            <Label TextColor="White" Text="Gender"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.gender}"/>
+            <Label TextColor="White" Text="Date of Birth"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.birthDate}"/>
+            <Label TextColor="White" Text="Marital Status"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.personDetail.maritalStatus}"/>
+            <Label TextColor="White" Text="Address Line 1"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.addressLine1}"/>
+            <Label TextColor="White" Text="Suburb"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.suburb}"/>
+            <Label TextColor="White" Text="Ward Number"/>
+            <Label TextColor="White" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.wardNo}"/>
+        </StackLayout>
+    </ScrollView>
 </ContentPage>
