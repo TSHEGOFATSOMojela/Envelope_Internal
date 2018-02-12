@@ -30,7 +30,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
             var itemSelectedData = e.SelectedItem as Indigents;
             //accepted details pages
-            Navigation.PushAsync(new AcceptedAssignDetails(itemSelectedData));
+            Navigation.PushAsync(new AssignmentDetails(itemSelectedData));
         }
 
         HttpClient client = new HttpClient();
