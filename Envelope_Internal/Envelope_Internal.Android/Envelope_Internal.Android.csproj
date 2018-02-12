@@ -50,8 +50,14 @@
     <PackageReference Include="DT.InsightsToHockey">
       <Version>0.0.2</Version>
     </PackageReference>
+    <PackageReference Include="Microsoft.Build.Framework">
+      <Version>15.5.180</Version>
+    </PackageReference>
     <PackageReference Include="Microsoft.Net.Http">
       <Version>2.2.29</Version>
+    </PackageReference>
+    <PackageReference Include="Naxam.BottomTabbedPage">
+      <Version>0.1.0.1</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.1-beta3</Version>

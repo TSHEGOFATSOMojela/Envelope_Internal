@@ -20,33 +20,38 @@ namespace Envelope_Internal.Indigent
         {
             InitializeComponent();
 
+
         }
-        
+
+
 
         private async void Login_Tapped(object sender, EventArgs e)
         {
-           // LoginService services = new LoginService();
-
+            // LoginService services = new LoginService();
+            ProgressLoader.IsRunning = true; 
             var getLoginDetails = await checkLogin(username.Text, password.Text);
             var root = JsonConvert.DeserializeObject<UserLogin>(getLoginDetails);
             if (root.IsCorrect == "Yes")
             {
+
                 await DisplayAlert("Login success", "You are login", "Okay", "Cancel");
                 await Navigation.PushAsync(new Page2());
             }
             else
             {
+
                 await DisplayAlert("Login failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
             }
 
-    
-        }
-  
-     
-          
+            ProgressLoader.IsRunning = false;
 
-            public async Task<string> checkLogin(string username, string password)
-            {
+        }
+
+
+
+
+        public async Task<string> checkLogin(string username, string password)
+        {
             try
             {
                 string LoginWebServiceUrl = "http://wmdev.ekurhuleni.gov.za:5555/rest/EMMDirectoryServices/resources/AdAuthentication/?userId=" + username + "&pwd=" + password;
@@ -61,7 +66,7 @@ namespace Envelope_Internal.Indigent
                 throw exception;
             }
         }
- 
+
 
 
 

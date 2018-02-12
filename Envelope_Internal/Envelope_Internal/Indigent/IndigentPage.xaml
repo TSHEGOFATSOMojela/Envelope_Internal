@@ -2,45 +2,41 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.IndigentPage"
-             Title="Sign In"
              NavigationPage.HasBackButton="False"
-             NavigationPage.BarTextColor="Green">
-   
+             Title="Sign In">
 
-    <ContentPage.ToolbarItems>
-      
- 
-    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <Frame>
-        <StackLayout>
+            <StackLayout>
 
-            <Entry x:Name="username"
+                <Entry x:Name="username"
                    Placeholder="User ID"
                    HorizontalTextAlignment="Start"
                    Margin="20">
-                
-                
-            </Entry>
 
-            <Entry x:Name="password"
+
+                </Entry>
+
+                <Entry x:Name="password"
                    IsPassword="True"
                    Placeholder="Password"
                    HorizontalTextAlignment="Start">
-                
-            </Entry>
+
+                </Entry>
 
 
                 <Button Text="login"
                         Clicked="Login_Tapped"
-                        BackgroundColor="DarkGreen"
+                        BackgroundColor="Black"
                         TextColor="White">
-                    
+
                 </Button>
 
+                <ActivityIndicator x:Name="ProgressLoader" IsRunning="False" VerticalOptions="Start" />
+            </StackLayout>
 
-        </StackLayout>
         </Frame>
+
     </ContentPage.Content>
-      
+
 </ContentPage>
