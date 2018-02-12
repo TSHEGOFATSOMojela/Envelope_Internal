@@ -19,9 +19,12 @@ namespace Envelope_Internal.Indigent.Assignment
         public MainAssign()
         {
             InitializeComponent();
+
             GetIndigentDetailsAsync();
+
+
         }
-        
+
         private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
@@ -40,7 +43,7 @@ namespace Envelope_Internal.Indigent.Assignment
                 var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
                 var IndigentDetails = JsonConvert.DeserializeObject<List<Indigents>>(response);
                 ListView.ItemsSource = IndigentDetails;
-
+                ProgressLoader.IsRunning = false;
                 return IndigentDetails;
             }
             catch (System.Exception exception)
@@ -50,8 +53,7 @@ namespace Envelope_Internal.Indigent.Assignment
         }
 
 
-   
+
 
     }
-
 }

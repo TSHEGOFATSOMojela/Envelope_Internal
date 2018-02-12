@@ -1,22 +1,41 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Envelope_Internal.Indigent.Assignment.Page1"
-             Title="Assignments"
-             NavigationPage.HasBackButton="False"
+             x:Class="Envelope_Internal.Indigent.Accepted.AcceptedAssignDetails"
+             Title="Accept"
              BackgroundColor="White">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem 
-                     Clicked="AcceptedClicked"
-                     Text="Accepted"/>
-
-        <ToolbarItem 
-                     Clicked="UnavailableClicked"
-                     Text="Unavailable"/>
-    </ContentPage.ToolbarItems>
     <ScrollView HorizontalOptions="FillAndExpand">
 
         <StackLayout Orientation="Vertical">
+            <Button 
+               HorizontalOptions="Center"
+               BackgroundColor="Gray" 
+               TextColor="White"
+               x:Name="Living_Condition"
+               Clicked="Living_Conditions"
+               Text="Living Conditions"/>
+            <Button 
+               HorizontalOptions="Center"
+               BackgroundColor="Gray" 
+               TextColor="White"
+               x:Name="HouseHold_Member"
+               Clicked="HouseHold_Members"
+               Text="HouseHold Members"/>
+            <Button 
+               HorizontalOptions="Center"
+               BackgroundColor="Gray" 
+               TextColor="White"
+               x:Name="Signature"
+               Clicked="Signatures"
+               Text="Signatures"/>
+            <Button
+               HorizontalOptions="Center"
+               BackgroundColor="Gray" 
+               TextColor="White"
+               x:Name="Document"
+               Clicked="Documents"
+            Text="Documents"/>
+            
             <StackLayout Orientation="Horizontal" >
                 <Label TextColor="Black" Margin="8" Text="Application Reference No:" />
                 <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
@@ -108,4 +127,7 @@
             </StackLayout>
         </StackLayout>
     </ScrollView>
+
+
 </ContentPage>
+       
