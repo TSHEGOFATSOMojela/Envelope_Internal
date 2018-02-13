@@ -25,17 +25,20 @@ namespace Envelope_Internal.Indigent.Assignment
             InitializeComponent();
             BindingContext = itemSelectedData;
         }
-
+        //accept assignment
         private async void AcceptedClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GeneralPage());
-
+        
         }
-
+        //accept assignment
         private async void UnavailableClicked(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new GeneralPage());
+            
 
         }
+
+
+
+     
     }
 }
