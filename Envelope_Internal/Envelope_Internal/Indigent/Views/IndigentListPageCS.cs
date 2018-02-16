@@ -1,11 +1,9 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
-using Envelope_Internal.Indigent.Models;
 using Xamarin.Forms;
+using Envelope_Internal.Indigent.Models;
 
-namespace Envelope_Internal.Indigent
+namespace Envelope_Internal.Indigent.Views
 {
     public class IndigentListPageCS : ContentPage
     {
@@ -82,7 +80,10 @@ namespace Envelope_Internal.Indigent
 
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtTodoId = -1;
-            listView.ItemsSource = await App.Database.GetAssignmentsAsync();
+            listView.ItemsSource = await App.Database.GetItemsAsync();
         }
     }
+    }
+
+    
 }

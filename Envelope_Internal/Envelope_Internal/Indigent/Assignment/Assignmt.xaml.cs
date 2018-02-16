@@ -27,7 +27,7 @@ using Xamarin.Forms.Xaml;
        
         void Accepted_Tapped(object sender, EventArgs e)
         {
-            var page = new Accepted();
+            var page = new AcceptedDetailsCS();
            PlaceHolder.Content = page.Content;
         }
 
