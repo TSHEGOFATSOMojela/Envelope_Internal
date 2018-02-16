@@ -1,9 +1,8 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Envelope_Internal.Indigent.Accepted.AcceptedAssignDetails"
-             Title="Accept"
-             BackgroundColor="White">
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+             x:Class="Envelope_Internal.Indigent.Assignment.AcceptedDetails">
+    
     <ScrollView HorizontalOptions="FillAndExpand">
 
         <StackLayout Orientation="Vertical">
@@ -35,7 +34,7 @@
                x:Name="Document"
                Clicked="Documents"
             Text="Documents"/>
-            
+
             <StackLayout Orientation="Horizontal" >
                 <Label TextColor="Black" Margin="8" Text="Application Reference No:" />
                 <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
@@ -129,5 +128,4 @@
     </ScrollView>
 
 
-</ContentPage>
-       
+</ContentView>

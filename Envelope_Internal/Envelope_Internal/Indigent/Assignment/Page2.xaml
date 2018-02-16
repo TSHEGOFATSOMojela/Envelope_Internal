@@ -11,7 +11,7 @@
   <!--Pages can be added as references or inline-->
     
     <pages:MainAssign/>
-    <pages:Accepted/>
+    <pages:AcceptedListCS/>
     <pages:Rejctd/>
     <pages:Clsed/>
 </TabbedPage>

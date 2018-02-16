@@ -1,17 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
 using System.Diagnostics;
 using Envelope_Internal.Indigent.Models;
 using Xamarin.Forms;
 
-namespace Envelope_Internal.Indigent
+namespace Envelope_Internal.Indigent.Assignment
 {
-    public class IndigentListPageCS : ContentPage
+    public class AcceptedListCS : ContentPage
     {
         ListView listView;
 
-        public IndigentListPageCS()
+        public AcceptedListCS()
         {
             Title = "Todo";
 
@@ -22,7 +20,7 @@ namespace Envelope_Internal.Indigent
             };
             toolbarItem.Clicked += async (sender, e) =>
             {
-                await Navigation.PushAsync(new IndigentListPageCS
+                await Navigation.PushAsync(new AcceptedAssignDetailsCS
                 {
                     BindingContext = new Assignment1()
                 });
@@ -61,12 +59,12 @@ namespace Envelope_Internal.Indigent
             };
             listView.ItemSelected += async (sender, e) =>
             {
-                //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as Assignment1).ID;
-                //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as Assignment1).ID);
+                //((App)App.Current).ResumeAtTodoId = (e.SelectedItem as TodoItem).ID;
+                //Debug.WriteLine("setting ResumeAtTodoId = " + (e.SelectedItem as TodoItem).ID);
 
                 if (e.SelectedItem != null)
                 {
-                    await Navigation.PushAsync(new IndigentListPageCS
+                    await Navigation.PushAsync(new AcceptedListCS
                     {
                         BindingContext = e.SelectedItem as Assignment1
                     });
@@ -74,15 +72,6 @@ namespace Envelope_Internal.Indigent
             };
 
             Content = listView;
-        }
-
-        protected override async void OnAppearing()
-        {
-            base.OnAppearing();
-
-            // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).ResumeAtTodoId = -1;
-            listView.ItemsSource = await App.Database.GetAssignmentsAsync();
         }
     }
 }

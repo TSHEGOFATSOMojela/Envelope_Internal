@@ -1,4 +1,5 @@
 ﻿using System;
+using SQLite;
 using System.Collections.Generic;
 using System.Text;
 using Newtonsoft.Json;
@@ -269,13 +270,11 @@ namespace Envelope_Internal.Indigent.Models
 
     public class Indigents
     {
+        [PrimaryKey, AutoIncrement]
         public string _id { get; set; }
         public IndigentApplicationDetails indigentApplicationDetails { get; set; }
         public string fieldWorkerID { get; set; }
+        public string status { get; set; }
 
     }
-    
-
-
-
 }

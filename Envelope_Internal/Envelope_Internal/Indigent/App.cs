@@ -34,7 +34,7 @@ namespace Envelope_Internal.Indigent
             {
                 if (database == null)
                 {
-                    database = new IndigentDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("TodoSQLite.db3"));
+                    database = new IndigentDB(DependencyService.Get<IFileHelper>().GetLocalFilePath("indigentDB.db3"));
                 }
                 return database;
             }
@@ -60,7 +60,7 @@ namespace Envelope_Internal.Indigent
 
             //		if (ResumeAtTodoId >= 0)
             //		{
-            //			var todoPage = new TodoItemPage();
+            //			var todoPage = new Assignment1Page();
             //			todoPage.BindingContext = await Database.GetItemAsync(ResumeAtTodoId);
             //			await MainPage.Navigation.PushAsync(todoPage, false); // no animation
             //		}
@@ -90,7 +90,7 @@ namespace Envelope_Internal.Indigent
 
             //		if (ResumeAtTodoId >= 0)
             //		{
-            //			var todoPage = new TodoItemPage();
+            //			var todoPage = new Assignment1Page();
             //			todoPage.BindingContext = await Database.GetItemAsync(ResumeAtTodoId);
             //			await MainPage.Navigation.PushAsync(todoPage, false); // no animation
             //		}
