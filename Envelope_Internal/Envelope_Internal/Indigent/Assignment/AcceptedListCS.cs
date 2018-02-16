@@ -11,7 +11,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
         public AcceptedListCS()
         {
-            Title = "Todo";
+            Title = "Accepted";
 
             var toolbarItem = new ToolbarItem
             {
