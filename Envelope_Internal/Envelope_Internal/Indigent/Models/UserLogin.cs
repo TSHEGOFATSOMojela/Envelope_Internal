@@ -8,5 +8,6 @@ namespace Envelope_Internal.Indigent.Models
     {
         public string IsCorrect { get; set; }
 
-    }
+     
+     }
 }

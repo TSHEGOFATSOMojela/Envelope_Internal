@@ -58,6 +58,7 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentListPageCS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\ITextToSpeech.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\acceptedResponse.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\Assignment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\IFileHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\UserLogin.cs" />
