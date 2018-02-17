@@ -24,33 +24,36 @@ namespace Envelope_Internal.Indigent.Assignment
         public Page1(Indigents itemSelectedData)
         {
             InitializeComponent();
+            //Binding item Selected Data assignments list details to the view Page1.xaml
             BindingContext = itemSelectedData;
 
           
         }
 
-        //accept assignment
+        //Passing Accepted(Assignment list) Status description method
         private async void AcceptedClicked(object sender, EventArgs e)
         {
+            //Binding Item data
             var indigentDetails = (Indigents)BindingContext;
+            //Fecting application Reference Number
+            var applicationRefNo = indigentDetails.indigentApplicationDetails.indigentApplicationHeader.applicationRefNo;
+            //Passing application Reference Number To PassAcceptedDetails method
+            var getApplicationId = await passAcceptedDetails(applicationRefNo);
 
-            var id = indigentDetails.indigentApplicationDetails.indigentApplicationHeader.applicationRefNo;
 
-            var getLoginDetails = await passAcceptedDetails(id);
-
-           
-
-            var root = JsonConvert.DeserializeObject<acceptedResponse>(getLoginDetails);
+            //DeserializeObject of Accepted status description
+            var root = JsonConvert.DeserializeObject<Status>(getApplicationId);
+            //check the status description
             if (root.StatusResponse.StatusDescription == "Success")
             {
-
-                await DisplayAlert("Accepted", "Successfull", "Okay", "Cancel");
-               // await Navigation.PushAsync(new Page2());
+                //display success message
+                await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
+             
             }
             else
             {
-
-                await DisplayAlert("Accepted failed", "Username or Password is incorrect or not exists", "Okay", "Cancel");
+                //display unsuccessfull message
+                await DisplayAlert("Status", "Unsuccessfull", "Okay", "Cancel");
             }
 
 
@@ -58,18 +61,18 @@ namespace Envelope_Internal.Indigent.Assignment
 
 
 
-        public async Task<string> passAcceptedDetails(string id)
+
+        //Passing Accepted status description to the server
+        public async Task<string> passAcceptedDetails(string applicationRefNo)
         {
             try
             {
-
-         
-
-                string AcceptAssignWebServiceUrl = "http://wmdev.ekurhuleni.gov.za:5555/rest/EMMShared/resources/updateFieldWorkerTaskStatus/{'taskStatus':'Accepted','applicationId':'" + id + "','reasonForRejection':''}";
-                HttpClient client = new HttpClient();
-
-                var response = await client.GetStringAsync(AcceptAssignWebServiceUrl);
                
+                string AcceptAssignWebServiceUrl = "http://wmdev.ekurhuleni.gov.za:5555/rest/EMMShared/resources/updateFieldWorkerTaskStatus/{'taskStatus':'Accepted','applicationId':'" + applicationRefNo + "','reasonForRejection':''}";
+                HttpClient client = new HttpClient();
+                //Passing application Reference Number to the server
+                var response = await client.GetStringAsync(AcceptAssignWebServiceUrl);
+               //return status description response
                 return response;
             }
             catch (System.Exception exception)
@@ -77,14 +80,58 @@ namespace Envelope_Internal.Indigent.Assignment
                 throw exception;
             }
         }
-  
 
+
+
+
+        //Passing Rejected(Assignment list) Status description method
         private async void UnavailableClicked(object sender, EventArgs e)
         {
+            //Binding Item data
+            var indigentDetails = (Indigents)BindingContext;
+            //Fecting application Reference Number
+            var applicationRefNo = indigentDetails.indigentApplicationDetails.indigentApplicationHeader.applicationRefNo;
+            //Passing application Reference Number To PassAcceptedDetails method
+            var getApplicationId = await passRejectedDetails(applicationRefNo);
 
+
+            //DeserializeObject of Rejected status description
+            var root = JsonConvert.DeserializeObject<Status>(getApplicationId);
+            //check the status description
+            if (root.StatusResponse.StatusDescription == "Success")
+            {
+                //display success message
+                await DisplayAlert("Status", "Rejected", "Okay", "Cancel");
+
+            }
+            else
+            {
+                //display unsuccessfull message
+                await DisplayAlert("Status", "Unsuccessfull", "Okay", "Cancel");
+            }
 
         }
 
 
+
+
+        //Passing Rejected status description to the server
+        public async Task<string> passRejectedDetails(string applicationRefNo)
+        {
+            try
+            {
+
+                string RejectedAssignWebServiceUrl ="http://wmdev.ekurhuleni.gov.za:5555/rest/EMMShared/resources/updateFieldWorkerTaskStatus/{'taskStatus':'Rejected','applicationId':'" + applicationRefNo + "','reasonForRejection':''}";
+                HttpClient client = new HttpClient();
+                //Passing application Refrence Number to the server
+                var response = await client.GetStringAsync(RejectedAssignWebServiceUrl);
+                //return status description response
+                return response;
+            }
+            catch (System.Exception exception)
+            {
+                throw exception;
+            }
+        }
     }
 }
