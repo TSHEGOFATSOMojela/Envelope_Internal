@@ -11,7 +11,7 @@ namespace Envelope_Internal.Indigent.Models
         public string StatusCode { get; set; }
     }
 
-    public class acceptedResponse
+    public class Status
     {
         public StatusResponse StatusResponse { get; set; }
     }
