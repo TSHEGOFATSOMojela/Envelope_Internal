@@ -3,22 +3,22 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              xmlns:local="clr-namespace:Envelope_Internal"
              x:Class="Envelope_Internal.MainPage"
-             BackgroundColor="White"
+             BackgroundImage="ekbackground3_logo.png"
+             Padding="15"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.BarTextColor = "White">
 
-    <ScrollView HorizontalOptions="CenterAndExpand">
+    <ScrollView>
         
         <StackLayout>
 
-            <Image  Margin="20" HorizontalOptions="Center" HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
-            <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
-
-            <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
-
+            <Image  Margin="20" HorizontalOptions="Center"  HeightRequest="150" WidthRequest="150"  Source="Ekurhulen.png"/>
+            
+         <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
+         <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
 
             <Button 
-                HorizontalOptions="Center"
+                
                 BackgroundColor="DarkGray" 
                 TextColor="White"
                 x:Name="login"

@@ -8,7 +8,7 @@ using Xamarin.Forms;
 namespace Envelope_Internal
 {
 	public partial class MainPage : ContentPage
-	{
+    {
 
 		public MainPage()
 		{
