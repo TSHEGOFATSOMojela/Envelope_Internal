@@ -20,7 +20,7 @@ namespace Envelope_Internal.Indigent.Assignment
     {
         private Indigents itemSelectedData;
 
-
+        //page 1 Constructor
         public Page1(Indigents itemSelectedData)
         {
             InitializeComponent();
@@ -29,6 +29,8 @@ namespace Envelope_Internal.Indigent.Assignment
 
           
         }
+
+
 
         //Passing Accepted(Assignment list) Status description method
         private async void AcceptedClicked(object sender, EventArgs e)

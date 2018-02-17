@@ -5,7 +5,7 @@
              NavigationPage.HasBackButton="False"
              NavigationPage.HasNavigationBar="False"
              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
-             BackgroundColor="White">
+              BackgroundImage="ekbackground3_logo.png">
    
     <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="White">
