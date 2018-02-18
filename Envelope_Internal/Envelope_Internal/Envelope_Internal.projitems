@@ -10,33 +10,22 @@
   </PropertyGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)App.xaml" />
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedDetails.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedList.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)MainPage.xaml" />
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)EnvelopeLoginPage.xaml" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\App.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\AssignmentPage.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AccptedAssignmentsList.xaml.cs">
+      <DependentUpon>AccptedAssignmentsList.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedAssignDetailsCS.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedDetails.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedAssignmentsDetails.xaml.cs">
+      <DependentUpon>AcceptedAssignmentsDetails.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedDetailsCS.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedList.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedListCS.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Assignmt.xaml.cs">
-      <DependentUpon>Assignmt.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\BottomNavigationBar.xaml.cs">
+      <DependentUpon>BottomNavigationBar.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)General\GeneralLv.cs" />
@@ -44,58 +33,43 @@
       <DependentUpon>GeneralPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page1.xaml.cs">
-      <DependentUpon>Page1.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AssignmentDetails.xaml.cs">
+      <DependentUpon>AssignmentDetails.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page2.xaml.cs">
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\TappedPageNavigation.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page2Tab1.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\AssignmentPageCS.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\View1.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Closed\Clsed.xaml.cs">
-      <DependentUpon>Clsed.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Closed\ClosedAssignments.xaml.cs">
+      <DependentUpon>ClosedAssignments.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Data\IndigentDB.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentListPage.xaml.cs">
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentListPageCS.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\ITextToSpeech.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\Status.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\Assignment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\IFileHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\UserLogin.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Rejected\Rejctd.xaml.cs">
-      <DependentUpon>Rejctd.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Rejected\RejectedAssignments.xaml.cs">
+      <DependentUpon>RejectedAssignments.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentPage.xaml.cs">
-      <DependentUpon>IndigentPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IndigentLoginPage.xaml.cs">
+      <DependentUpon>IndigentLoginPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\LandAssign.xaml.cs">
-      <DependentUpon>LandAssign.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\MainAssign.xaml.cs">
-      <DependentUpon>MainAssign.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AssignmentList.xaml.cs">
+      <DependentUpon>AssignmentList.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\Indigents.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Services\AssignmentListServices.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\ViewModels\AssignmentListViewModel.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)MainPage.xaml.cs">
-      <DependentUpon>MainPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)EnvelopeLoginPage.xaml.cs">
+      <DependentUpon>EnvelopeLoginPage.xaml</DependentUpon>
     </Compile>
-    <Compile Include="$(MSBuildThisFileDirectory)navPage.xaml.cs">
-      <DependentUpon>navPage.xaml</DependentUpon>
+    <Compile Include="$(MSBuildThisFileDirectory)EnvelopeMainPage.xaml.cs">
+      <DependentUpon>EnvelopeMainPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Settings\settingLv.cs" />
@@ -105,7 +79,7 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)navPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)EnvelopeMainPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
@@ -123,75 +97,65 @@
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\IndigentPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\IndigentLoginPage.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="$(MSBuildThisFileDirectory)Indigent\Accepted\" />
     <Folder Include="$(MSBuildThisFileDirectory)Indigent\Closed\" />
     <Folder Include="$(MSBuildThisFileDirectory)Indigent\Rejected\" />
     <Folder Include="$(MSBuildThisFileDirectory)Settings\" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Assignmt.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\BottomNavigationBar.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\MainAssign.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AssignmentList.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\LandAssign.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Rejected\RejectedAssignments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Rejected\Rejctd.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Closed\ClosedAssignments.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Closed\Clsed.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AssignmentDetails.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page1.xaml">
-      <SubType>Designer</SubType>
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page2.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\Page2Tab1.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\IndigentListPage.xaml">
-      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
-    </EmbeddedResource>
-  </ItemGroup>
-  <ItemGroup>
-    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\AssignmentPage.xaml">
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\TappedPageNavigation.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\View1.xaml">
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AccptedAssignmentsList.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AcceptedAssignmentsDetails.xaml">
+      <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
   </ItemGroup>

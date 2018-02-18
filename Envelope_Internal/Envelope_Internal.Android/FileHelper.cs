@@ -8,6 +8,7 @@ using Android.Content;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using Envelope_Internal.Indigent;
 using Xamarin.Forms;
 using Envelope_Internal.Droid;
 

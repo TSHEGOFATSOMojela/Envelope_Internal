@@ -1,4 +1,4 @@
-﻿namespace Envelope_Internal.Indigent.Models
+﻿namespace Envelope_Internal.Indigent
 {
     public interface IFileHelper
     {
