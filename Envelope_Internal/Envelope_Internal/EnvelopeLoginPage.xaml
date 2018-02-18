@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:Envelope_Internal"
+             x:Class="Envelope_Internal.EnvelopeLoginPage"
+             BackgroundColor="White"
+             Padding="25"
+             NavigationPage.HasNavigationBar="False"
+             NavigationPage.BarTextColor = "White">
+
+    <ScrollView>
+
+        <StackLayout >
+
+         <Image  Margin="20" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120"  Source="Ekurhulen.png"/>
+            
+         <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
+         <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
+
+            <Button 
+                
+                BackgroundColor="DarkGray" 
+                TextColor="White"
+                x:Name="login"
+                Text="Log In"
+                Clicked="login_Clicked">
+                <Button.Image>
+                    <OnPlatform x:TypeArguments="FileImageSource"
+                                iOS="ic_lock_black_24dp.png"                     
+                                Android="ic_lock_black_24dp.png"                     
+                               />
+
+                </Button.Image>
+               
+            </Button>
+  
+        </StackLayout>
+
+   
+    </ScrollView>
+
+</ContentPage>

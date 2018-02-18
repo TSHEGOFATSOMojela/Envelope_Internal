@@ -28,7 +28,7 @@ namespace Envelope_Internal
 
         private async void TapGestureRecognizer_Tapped(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new MainPage());
+            await Navigation.PushAsync(new EnvelopeLoginPage());
         }
     }
 }

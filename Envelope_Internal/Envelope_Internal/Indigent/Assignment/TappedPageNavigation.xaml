@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://xamarin.com/schemas/2014/forms"
+                 xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                 x:Class="Envelope_Internal.Indigent.Assignment.TappedPageNavigation"
+                 xmlns:pages="clr-namespace:Envelope_Internal.Indigent.Assignment"
+                 BarBackgroundColor="Black"
+                 BarTextColor="White"
+                 NavigationPage.HasBackButton="False"
+                 NavigationPage.HasNavigationBar="False"
+                 Title="Indigent">
+    <!--Pages can be added as references or inline-->
+
+    <pages:AssignmentList/>
+    <pages:AccptedAssignmentsList/>
+    <pages:RejectedAssignments/>
+    <pages:ClosedAssignments/>
+</TabbedPage>
