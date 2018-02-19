@@ -21,7 +21,7 @@
         {
             private Indigents itemSelectedData;
 
- 
+            assignment applicantDetails = new assignment();
 
             //AssignmentDetails Constructor
             public AssignmentDetails(Indigents itemSelectedData)
@@ -52,14 +52,20 @@
                 //check the status description
                 if (root.StatusResponse.StatusDescription == "Success")
                 {
-                    //display success message
-                
-                    await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
-               
-                    //await Navigation.PushAsync(new GeneralPage());
-                   // await Navigation.PopAsync();
+                //display success message
+                string s = JsonConvert.SerializeObject(indigentDetails);
+                applicantDetails.status = "Accepted";
+                applicantDetails.fieldWorkerID = indigentDetails.fieldWorkerID;
+                applicantDetails._id = indigentDetails._id;
+                applicantDetails.applicantDetails = s;
+                await App.Database.SaveItemAsync(applicantDetails);
+                //await Navigation.PopAsync();
+                await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
+                await Navigation.PopAsync();
+                //await Navigation.PushAsync(new GeneralPage());
+                // await Navigation.PopAsync();
 
-                }
+            }
                 else
                 {
                     //display unsuccessfull message
