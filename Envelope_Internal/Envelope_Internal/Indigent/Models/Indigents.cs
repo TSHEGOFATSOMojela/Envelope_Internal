@@ -271,6 +271,7 @@ namespace Envelope_Internal.Indigent.Models
     public class Indigents
     {
         [PrimaryKey, AutoIncrement]
+        public int ID { get; set; }
         public string _id { get; set; }
         public IndigentApplicationDetails indigentApplicationDetails { get; set; }
         public string fieldWorkerID { get; set; }

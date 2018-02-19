@@ -5,10 +5,11 @@ using System.Text;
 using System.Threading.Tasks;
 using Envelope_Internal.Indigent.ViewModels;
 using Envelope_Internal.Indigent.Models;
-using System.Diagnostics;
+using Envelope_Internal;
+using SQLite;
 using System.Net.Http;
 using Newtonsoft.Json;
-using SQLite;
+using Envelope_Internal.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -24,9 +25,17 @@ namespace Envelope_Internal.Indigent.Assignment
             //Binding  Accepted Assignment List Details to view
             // GetIndigentDetailsAsync();
 
-
+            OnAppearing();
         }
 
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            listView.ItemsSource = await App.Database.GetItemsAsync();
+        }
 
         //accepted Assignment list ,Item Selected method
         private  void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)

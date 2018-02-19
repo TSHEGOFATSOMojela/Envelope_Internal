@@ -24,7 +24,7 @@ namespace Envelope_Internal.Data
 
         public Task<List<assignment>> GetItemsNotDoneAsync()
         {
-            return database.QueryAsync<assignment>("SELECT * FROM [Indigents] WHERE [Done] = 0");
+            return database.QueryAsync<assignment>("SELECT * FROM [assignment] WHERE [Done] = 0");
         }
 
         public Task<assignment> GetItemAsync(int id)
