@@ -10,7 +10,7 @@
     using SQLite;
     using System.Net.Http;
     using Newtonsoft.Json;
-
+     using Envelope_Internal.Data;
     using Xamarin.Forms;
     using Xamarin.Forms.Xaml;
 
@@ -52,14 +52,24 @@
                 //check the status description
                 if (root.StatusResponse.StatusDescription == "Success")
                 {
-                    //display success message
-                
-                    await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
-               
-                    //await Navigation.PushAsync(new GeneralPage());
-                   // await Navigation.PopAsync();
+                //display success message
 
-                }
+                //await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
+
+                // await Navigation.PopAsync();
+                assignment assignment1 = new assignment();
+                string applicantDetails = Newtonsoft.Json.JsonConvert.SerializeObject(indigentDetails);
+                assignment1.applicantDetails = applicantDetails;
+                assignment1.fieldWorkerID = indigentDetails.fieldWorkerID;
+                assignment1.status = "Accepted";
+                assignment1._id = indigentDetails._id;
+               
+                await App.Database.SaveItemAsync(assignment1);
+                await DisplayAlert("Status", "Saved SuccessFully", "Okay", "Cancel");
+                //await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
+                await Navigation.PopAsync();
+
+            }
                 else
                 {
                     //display unsuccessfull message

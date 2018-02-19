@@ -130,13 +130,13 @@
       <Version>0.1.0.1</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.1-beta3</Version>
+      <Version>11.0.1</Version>
     </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
-      <Version>2.0.1-beta</Version>
+      <Version>2.0.1.48-beta</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
-      <Version>1.4.118</Version>
+      <Version>1.5.166-beta</Version>
     </PackageReference>
     <PackageReference Include="SQLitePCL.bundle_green">
       <Version>0.9.4-pre1</Version>
@@ -144,13 +144,19 @@
     <PackageReference Include="SQLitePCLRaw.bundle_green">
       <Version>1.1.9</Version>
     </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.core">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.osx">
+      <Version>1.1.9</Version>
+    </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.3</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
-      <Version>2.0.1</Version>
+      <Version>2.0.2</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.280555" />
   </ItemGroup>
   <ItemGroup>
     <BundleResource Include="Resources\Ekurhulen.png" />

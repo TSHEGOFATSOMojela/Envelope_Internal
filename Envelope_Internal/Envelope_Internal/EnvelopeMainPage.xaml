@@ -10,7 +10,10 @@
     <MasterDetailPage.Master>
         <ContentPage Title="Menu" BackgroundColor="White">
             <StackLayout BackgroundColor="White">
-                <StackLayout BackgroundColor="Gray" Margin="35" HorizontalOptions="CenterAndExpand" VerticalOptions="StartAndExpand">
+                <StackLayout BackgroundColor="Gray"
+                             Margin="35"
+                             HorizontalOptions="CenterAndExpand"
+                             VerticalOptions="StartAndExpand">
                     <controls:CircleImage  
                         Source="iconsUser.png"
                         WidthRequest="45" 
@@ -43,7 +46,9 @@
     <MasterDetailPage.Detail>
         <NavigationPage>
             <x:Arguments>
-                <ContentPage Title="City Of Ekurhuleni">
+                <ContentPage 
+                    
+                    Title="                City Of Ekurhuleni">
 
                     <ContentPage.ToolbarItems>
                         <ToolbarItem Name="_General"
@@ -64,11 +69,18 @@
                          Clicked="LogOut_Tapped"/>
                     </ContentPage.ToolbarItems>
 
-                    <ScrollView>
-                        <StackLayout BackgroundColor="White">
+                    <ScrollView  HorizontalOptions="FillAndExpand">
+                        <StackLayout BackgroundColor="White" 
+                                     HorizontalOptions="FillAndExpand">
 
-                            <Image  Margin="20" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120"  Source="Ekurhulen.png"/>
-                            <StackLayout Orientation="Horizontal">
+                            <Image  Margin="20" HorizontalOptions="Center"
+                                    HeightRequest="120"
+                                    WidthRequest="120" 
+                                    Source="Ekurhulen.png"/>
+                            <StackLayout
+                                Orientation="Horizontal"
+                                HorizontalOptions="CenterAndExpand"
+                               >
                                 <StackLayout Margin="15">
                                     <controls:CircleImage  
                                 Source="icon.png"
@@ -118,7 +130,9 @@
                                 </StackLayout>
 
                             </StackLayout>
-                            <StackLayout Orientation="Horizontal">
+                            <StackLayout
+                                Orientation="Horizontal"
+                                HorizontalOptions="CenterAndExpand">
 
                                 <StackLayout  Margin="20">
                                     <controls:CircleImage  

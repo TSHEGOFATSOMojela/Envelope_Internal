@@ -5,6 +5,7 @@ using System.Text;
 using Xamarin.Forms.Xaml;
 using System.Diagnostics;
 using Envelope_Internal.Data;
+using Envelope_Internal;
 using  Envelope_Internal.Indigent.Models;
 using Envelope_Internal.Indigent.Assignment;
 using Xamarin.Forms;
@@ -37,6 +38,7 @@ namespace Envelope_Internal
             }
         }
 
+        public int ResumeAtTodoId { get; set; }
 
         protected override void OnStart ()
 		{
