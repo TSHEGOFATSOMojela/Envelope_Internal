@@ -1,4 +1,4 @@
-﻿namespace Envelope_Internal.Indigent
+﻿namespace Envelope_Internal
 {
     public interface IFileHelper
     {
