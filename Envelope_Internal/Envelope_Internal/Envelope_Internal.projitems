@@ -16,6 +16,7 @@
     <Compile Include="$(MSBuildThisFileDirectory)App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Data\IndigentDB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AccptedAssignmentsList.xaml.cs">
       <DependentUpon>AccptedAssignmentsList.xaml</DependentUpon>
       <SubType>Code</SubType>
@@ -47,8 +48,9 @@
       <DependentUpon>ClosedAssignments.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\assignment.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\Status.cs" />
-    <Compile Include="$(MSBuildThisFileDirectory)Indigent\IFileHelper.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)IFileHelper.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Models\UserLogin.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Rejected\RejectedAssignments.xaml.cs">
       <DependentUpon>RejectedAssignments.xaml</DependentUpon>
