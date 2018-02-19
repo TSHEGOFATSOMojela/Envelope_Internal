@@ -10,8 +10,8 @@ namespace Envelope_Internal.Indigent.Models
         {
             [PrimaryKey, AutoIncrement]
             public int ID { get; set; }
-            public string Name { get; set; }
-            public string Notes { get; set; }
-            public bool Done { get; set; }
+            public string applicantDetails { get; set; }
+            public string Status { get; set; }
+            public string FieldWorkrId { get; set; }
         }
 }

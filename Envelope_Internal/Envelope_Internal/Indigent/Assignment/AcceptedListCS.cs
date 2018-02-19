@@ -2,6 +2,7 @@
 using System.Diagnostics;
 using Envelope_Internal.Indigent.Models;
 using Xamarin.Forms;
+using SQLite;
 
 namespace Envelope_Internal.Indigent.Assignment
 {
@@ -22,7 +23,7 @@ namespace Envelope_Internal.Indigent.Assignment
             {
                 await Navigation.PushAsync(new AcceptedAssignDetailsCS
                 {
-                    BindingContext = new Assignment1()
+                    BindingContext = new Indigents()
                 });
             };
             ToolbarItems.Add(toolbarItem);
@@ -37,14 +38,14 @@ namespace Envelope_Internal.Indigent.Assignment
                         VerticalTextAlignment = TextAlignment.Center,
                         HorizontalOptions = LayoutOptions.StartAndExpand
                     };
-                    label.SetBinding(Label.TextProperty, "Name");
+                    label.SetBinding(Label.TextProperty, "Status");
 
                     var tick = new Image
                     {
                         Source = ImageSource.FromFile("check.png"),
                         HorizontalOptions = LayoutOptions.End
                     };
-                    tick.SetBinding(VisualElement.IsVisibleProperty, "Done");
+                    tick.SetBinding(VisualElement.IsVisibleProperty, "ID");
 
                     var stackLayout = new StackLayout
                     {

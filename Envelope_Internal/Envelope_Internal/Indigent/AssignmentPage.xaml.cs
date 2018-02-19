@@ -40,7 +40,7 @@ namespace Envelope_Internal.Indigent
         void OnSpeakClicked(object sender, EventArgs e)
         {
             var assignment = (Assignment1)BindingContext;
-            DependencyService.Get<ITextToSpeech>().Speak(assignment.Name + " " + assignment.Notes);
+            DependencyService.Get<ITextToSpeech>().Speak(assignment.Status + " " + assignment.ID);
         }
     }
 }

@@ -26,7 +26,6 @@ namespace Envelope_Internal.Indigent.Assignment
             InitializeComponent();
             //Binding item Selected Data assignments list details to the view Page1.xaml
             BindingContext = itemSelectedData;
-
           
         }
 
@@ -48,9 +47,19 @@ namespace Envelope_Internal.Indigent.Assignment
             //check the status description
             if (root.StatusResponse.StatusDescription == "Success")
             {
+                Assignment1 assignment = new Assignment1();
+
                 //display success message
+
+                string applicantDetails = Newtonsoft.Json.JsonConvert.SerializeObject(indigentDetails);
+                assignment.applicantDetails = applicantDetails;
+                assignment.FieldWorkrId = indigentDetails.fieldWorkerID;
+                assignment.Status = "Accepted";
+                await App.Database.SaveItemAsync(assignment);
+
                 await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
-             
+                await Navigation.PopAsync();
+
             }
             else
             {

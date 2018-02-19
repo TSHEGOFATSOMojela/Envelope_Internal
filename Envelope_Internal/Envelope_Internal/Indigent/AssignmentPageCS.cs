@@ -47,7 +47,7 @@ namespace Envelope_Internal.Indigent
             speakButton.Clicked += (sender, e) =>
             {
                 var assignment = (Assignment1)BindingContext;
-                DependencyService.Get<ITextToSpeech>().Speak(assignment.Name + " " + assignment.Notes);
+                DependencyService.Get<ITextToSpeech>().Speak(assignment.FieldWorkrId + " " + assignment.Status);
             };
 
             Content = new StackLayout

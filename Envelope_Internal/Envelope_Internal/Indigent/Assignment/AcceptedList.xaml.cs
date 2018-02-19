@@ -11,6 +11,8 @@ namespace Envelope_Internal.Indigent.Assignment
         public AcceptedList()
         {
             InitializeComponent();
+
+            OnAppearing();
         }
 
         protected override async void OnAppearing()

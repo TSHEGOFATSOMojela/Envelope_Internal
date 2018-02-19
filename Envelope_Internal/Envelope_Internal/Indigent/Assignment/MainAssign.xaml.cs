@@ -25,12 +25,17 @@ namespace Envelope_Internal.Indigent.Assignment
 
         }
 
-        private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        async void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
 
             var itemSelectedData = e.SelectedItem as Indigents;
-
-            Navigation.PushAsync(new Page1(itemSelectedData));
+            if (e.SelectedItem != null)
+            {
+                await Navigation.PushAsync(new Page1(itemSelectedData)
+                {
+                    BindingContext = e.SelectedItem as Indigents
+                });
+            }
         }
 
         HttpClient client = new HttpClient();

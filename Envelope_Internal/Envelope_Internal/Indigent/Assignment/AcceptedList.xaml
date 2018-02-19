@@ -32,13 +32,13 @@
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Horizontal" >
                                         <Label TextColor="Black" Margin="4" Text="Application Reference No:" />
-                                        <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
+                                        <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding ID}"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Horizontal" >
                                         <Label TextColor="Black" Margin="4" Text="First Names:" />
-                                        <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.householdDetail[0].personDetail.firstNames}"/>
+                                        <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding Status}"/>
                                     </StackLayout>
-                                    <StackLayout Orientation="Horizontal" >
+                                    <!--<StackLayout Orientation="Horizontal" >
                                         <Label TextColor="Black" Margin="4" Text="Application Date:" />
                                         <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationDate}"/>
                                     </StackLayout>
@@ -50,7 +50,7 @@
                                     <StackLayout Orientation="Horizontal" >
                                         <Label TextColor="Black" Margin="4" Text="Suburb:" />
                                         <Label TextColor="Black" Margin="4" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.suburb}"/>
-                                    </StackLayout>
+                                    </StackLayout>-->
 
 
 

@@ -24,7 +24,7 @@ namespace Envelope_Internal.Indigent
             {
                 await Navigation.PushAsync(new IndigentListPageCS
                 {
-                    BindingContext = new Assignment1()
+                    BindingContext = new Indigents()
                 });
             };
             ToolbarItems.Add(toolbarItem);
@@ -68,7 +68,7 @@ namespace Envelope_Internal.Indigent
                 {
                     await Navigation.PushAsync(new IndigentListPageCS
                     {
-                        BindingContext = e.SelectedItem as Assignment1
+                        BindingContext = e.SelectedItem as Indigents
                     });
                 }
             };

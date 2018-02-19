@@ -33,7 +33,7 @@ namespace Envelope_Internal.Indigent
         {
             await Navigation.PushAsync(new AssignmentPage
             {
-                BindingContext = new Assignment1()
+                BindingContext = new Indigents()
             });
         }
 
@@ -45,7 +45,7 @@ namespace Envelope_Internal.Indigent
             {
                 await Navigation.PushAsync(new AssignmentPage
                 {
-                    BindingContext = e.SelectedItem as Assignment1
+                    BindingContext = e.SelectedItem as Indigents
                 });
             }
         }

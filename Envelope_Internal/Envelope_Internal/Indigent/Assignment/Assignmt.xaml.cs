@@ -1,14 +1,8 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-   namespace Envelope_Internal.Indigent.Assignment
-
+namespace Envelope_Internal.Indigent.Assignment
 { 
 
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -27,7 +21,7 @@ using Xamarin.Forms.Xaml;
        
         void Accepted_Tapped(object sender, EventArgs e)
         {
-            var page = new AcceptedDetailsCS();
+            var page = new AcceptedListCS();
            PlaceHolder.Content = page.Content;
         }
 

@@ -33,7 +33,7 @@ namespace Envelope_Internal.Indigent.Assignment
         void OnSpeakClicked(object sender, EventArgs e)
         {
             var todoItem = (Assignment1)BindingContext;
-            DependencyService.Get<ITextToSpeech>().Speak(todoItem.Name + " " + todoItem.Notes);
+            DependencyService.Get<ITextToSpeech>().Speak(todoItem.Status + " " + todoItem.FieldWorkrId);
         }
 
         //button Living condition clicked
