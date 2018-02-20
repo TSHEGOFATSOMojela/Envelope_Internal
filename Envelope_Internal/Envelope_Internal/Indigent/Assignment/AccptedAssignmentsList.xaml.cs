@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 using System.Text;
 using System.Threading.Tasks;
 using Envelope_Internal.Indigent.ViewModels;
@@ -28,13 +29,28 @@ namespace Envelope_Internal.Indigent.Assignment
             OnAppearing();
         }
 
+
+
         protected override async void OnAppearing()
         {
             base.OnAppearing();
+            assignment indigentApplicationDetails = new assignment();
+            Indigents indigent = new Indigents();
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            var myList = await App.Database.GetItemsAsync();
+            ArrayList accepted1 = new ArrayList();
 
-            // Reset the 'resume' id, since we just want to re-start here
-            ((App)App.Current).ResumeAtTodoId = -1;
-            listView.ItemsSource = await App.Database.GetItemsAsync();
+            for (int i = 0; i < 1; i++)
+            {
+                //accepted1.Add(myList[i].applicantDetails);
+
+                accepted1.Add(Newtonsoft.Json.JsonConvert.DeserializeObject<Indigents>(myList[i].applicantDetails));
+                Console.WriteLine(accepted1);
+                Console.WriteLine("Hello");
+            }
+            Console.WriteLine(accepted1);
+            listView.ItemsSource = accepted1;
         }
 
         //accepted Assignment list ,Item Selected method

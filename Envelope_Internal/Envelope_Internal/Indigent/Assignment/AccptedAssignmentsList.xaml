@@ -61,6 +61,6 @@
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-        <ActivityIndicator x:Name="ProgressLoader" IsRunning="True" Margin="100" VerticalOptions="Center" HorizontalOptions="Center"/>
+      
     </Grid>
 </ContentPage>
