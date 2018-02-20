@@ -25,6 +25,8 @@ namespace Envelope_Internal
       
         }
 
+        public int ResumeAtTodoId { get; set; }
+
         public static IndigentDB Database
         {
             get

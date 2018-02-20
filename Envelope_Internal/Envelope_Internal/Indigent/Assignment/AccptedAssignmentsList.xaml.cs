@@ -11,22 +11,45 @@ using Newtonsoft.Json;
 using SQLite;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using System.Collections;
 
 namespace Envelope_Internal.Indigent.Assignment
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AccptedAssignmentsList : ContentPage
 	{
+
+        ArrayList accepted = new ArrayList();
         //Accpted Assignments List Constructor
         public AccptedAssignmentsList()
         {
             InitializeComponent();
             //Binding  Accepted Assignment List Details to view
             // GetIndigentDetailsAsync();
-
+            OnAppearing();
 
         }
+        protected override async void OnAppearing()
+        {
+            base.OnAppearing();
+            assignment indigentApplicationDetails = new assignment();
+            Indigents indigent = new Indigents();
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            var myList = await App.Database.GetItemsAsync();
+            ArrayList accepted1 = new ArrayList();
 
+            for (int i = 0; i < 1; i++)
+            {
+                //accepted1.Add(myList[i].applicantDetails);
+
+                accepted1.Add(Newtonsoft.Json.JsonConvert.DeserializeObject<Indigents>(myList[i].applicantDetails));
+                Console.WriteLine(accepted1);
+            }
+            Console.WriteLine(accepted1);
+            listView.ItemsSource = accepted1;
+            Console.WriteLine(accepted1);
+        }
 
         //accepted Assignment list ,Item Selected method
         private  void OnListItemSelected(object sender, SelectedItemChangedEventArgs e)
