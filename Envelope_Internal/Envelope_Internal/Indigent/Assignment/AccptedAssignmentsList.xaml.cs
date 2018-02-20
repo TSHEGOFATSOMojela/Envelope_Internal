@@ -41,7 +41,7 @@ namespace Envelope_Internal.Indigent.Assignment
             var myList = await App.Database.GetItemsAsync();
             ArrayList accepted1 = new ArrayList();
 
-            for (int i = 0; i < 2; i++)
+            for (int i = 0; i < myList.Count; i++)
             {
                 //accepted1.Add(myList[i].applicantDetails);
 
