@@ -37,7 +37,7 @@ namespace Envelope_Internal
                 return database;
             }
         }
-
+        public string username { get; set; }
         public int ResumeAtTodoId { get; set; }
 
         protected override void OnStart ()

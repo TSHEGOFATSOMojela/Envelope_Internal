@@ -6,8 +6,8 @@
                  BarBackgroundColor="Black"
                  BarTextColor="White"
                  NavigationPage.HasBackButton="False"
-                 NavigationPage.HasNavigationBar="False"
-                 Title="Indigent">
+                 NavigationPage.HasNavigationBar="True"
+                 Title="{Binding Title}">
     <!--Pages can be added as references or inline-->
 
     <pages:AssignmentList/>

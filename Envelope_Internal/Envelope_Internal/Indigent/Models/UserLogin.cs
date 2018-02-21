@@ -7,7 +7,5 @@ namespace Envelope_Internal.Indigent.Models
     class UserLogin
     {
         public string IsCorrect { get; set; }
-
-     
-     }
+    }
 }
