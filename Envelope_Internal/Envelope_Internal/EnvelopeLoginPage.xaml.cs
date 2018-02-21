@@ -19,8 +19,9 @@
            //login button clicked 
             private async void login_Clicked(object sender, EventArgs e)
             {
-                //Navigate to Envelope Main Page
-                await Navigation.PushAsync(new EnvelopeMainPage());
+            //Navigate to Envelope Main Page
+            ((App)App.Current).username = username.ToString();
+            await Navigation.PushAsync(new EnvelopeMainPage());
             }
     }
     }

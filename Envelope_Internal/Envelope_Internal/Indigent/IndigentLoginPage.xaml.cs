@@ -33,10 +33,11 @@
                 var root = JsonConvert.DeserializeObject<UserLogin>(getLoginDetails);
                 if (root.IsCorrect == "Yes")
                 {
-
+                    ((App)App.Current).username = username.Text;
                     await DisplayAlert("Login success", "You are login", "Okay", "Cancel");
                     //Navigate to Tapped page Navigation
                     await Navigation.PushAsync(new TappedPageNavigation());
+                    
                 }
                 else
                 {

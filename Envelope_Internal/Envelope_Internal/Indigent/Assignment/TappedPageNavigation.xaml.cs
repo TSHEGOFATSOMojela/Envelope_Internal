@@ -11,8 +11,9 @@ namespace Envelope_Internal.Indigent.Assignment
         public TappedPageNavigation()
         {
             InitializeComponent();
-          
-           
+
+            Title = ((App)App.Current).username.ToString();
+
         }
     }
 }
