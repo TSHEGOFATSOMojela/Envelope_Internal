@@ -8,7 +8,7 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem 
                          Clicked="AcceptedClicked"
-                         Text="Accepted"/>
+                         Text="Accept"/>
 
         <ToolbarItem 
                          Clicked="UnavailableClicked"

@@ -56,7 +56,7 @@
             //M_health image 
             private async void OnMhealthClicked(object sender, EventArgs e)
             {
-                await Navigation.PushAsync(new IndigentLoginPage());
+                await Navigation.PushAsync(new BottomNavigationBar());
             }
 
             //log call image

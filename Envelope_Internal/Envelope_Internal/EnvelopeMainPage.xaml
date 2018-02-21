@@ -12,7 +12,7 @@
             <StackLayout BackgroundColor="White">
                 <StackLayout BackgroundColor="Gray"
                              Margin="35"
-                             HorizontalOptions="CenterAndExpand"
+                             HorizontalOptions="Center"
                              VerticalOptions="StartAndExpand">
                     <controls:CircleImage  
                         Source="iconsUser.png"
@@ -48,7 +48,7 @@
             <x:Arguments>
                 <ContentPage 
                     
-                    Title="                City Of Ekurhuleni">
+                    Title="City Of Ekurhuleni">
 
                     <ContentPage.ToolbarItems>
                         <ToolbarItem Name="_General"
@@ -79,7 +79,7 @@
                                     Source="Ekurhulen.png"/>
                             <StackLayout
                                 Orientation="Horizontal"
-                                HorizontalOptions="CenterAndExpand"
+                                HorizontalOptions="StartAndExpand"
                                >
                                 <StackLayout Margin="15">
                                     <controls:CircleImage  
@@ -132,7 +132,7 @@
                             </StackLayout>
                             <StackLayout
                                 Orientation="Horizontal"
-                                HorizontalOptions="CenterAndExpand">
+                                HorizontalOptions="StartAndExpand">
 
                                 <StackLayout  Margin="20">
                                     <controls:CircleImage  
