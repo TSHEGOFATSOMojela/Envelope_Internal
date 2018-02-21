@@ -22,9 +22,9 @@ namespace Envelope_Internal.Data
             return database.Table<assignment>().ToListAsync();
         }
 
-        public Task<List<assignment>> GetItemsNotDoneAsync()
+        public Task<List<assignment>> GetItemsNotDoneAsync(string status)
         {
-            return database.QueryAsync<assignment>("SELECT * FROM [assignment] WHERE [status] = Rejected");
+            return database.QueryAsync<assignment>("SELECT * FROM assignment WHERE status == '" + status + "'");
         }
 
         public Task<assignment> GetItemAsync(int id)

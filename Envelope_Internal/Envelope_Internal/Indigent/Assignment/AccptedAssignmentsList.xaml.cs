@@ -38,7 +38,7 @@ namespace Envelope_Internal.Indigent.Assignment
             Indigents indigent = new Indigents();
             // Reset the 'resume' id, since we just want to re-start here
             ((App)App.Current).ResumeAtTodoId = -1;
-            var myList = await App.Database.GetItemsAsync();
+            var myList = await App.Database.GetItemsNotDoneAsync("Accepted");
             ArrayList accepted1 = new ArrayList();
 
             for (int i = 0; i < myList.Count; i++)
