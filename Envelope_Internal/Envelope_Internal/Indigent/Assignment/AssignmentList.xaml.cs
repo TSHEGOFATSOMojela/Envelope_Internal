@@ -26,6 +26,8 @@ namespace Envelope_Internal.Indigent.Assignment
 
         }
 
+        string username = ((App)App.Current).username.ToString();
+
         //Item Selected Method
         private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
@@ -45,7 +47,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
                 HttpClient client = new HttpClient();
                 //Get Assignment list details
-                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
+                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/ + username");
                 //DeserializeObject Indigents
                 var IndigentDetails = JsonConvert.DeserializeObject<List<Indigents>>(response);
                 //Binding Assignment list details to View
