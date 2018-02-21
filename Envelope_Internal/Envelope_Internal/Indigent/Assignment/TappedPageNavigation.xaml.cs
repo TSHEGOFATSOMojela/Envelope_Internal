@@ -11,6 +11,8 @@ namespace Envelope_Internal.Indigent.Assignment
         public TappedPageNavigation()
         {
             InitializeComponent();
+          
+           
         }
     }
 }

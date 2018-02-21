@@ -18,7 +18,7 @@
 
         </Grid.RowDefinitions>
 
-        <ContentView x:Name="PlaceHolder" Grid.Row="0" HeightRequest="0"  HorizontalOptions="FillAndExpand"/>
+        <ContentView x:Name="PlaceHolder" Grid.Row="0" HeightRequest="40"  HorizontalOptions="FillAndExpand"/>
 
 
         <!-- This will be my tap bar -->

@@ -65,7 +65,7 @@
                 assignment1._id = indigentDetails._id;
                
                 await App.Database.SaveItemAsync(assignment1);
-                await DisplayAlert("Status", "Saved SuccessFully", "Okay", "Cancel");
+                await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
                 //await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
                 await Navigation.PopAsync();
 
@@ -114,10 +114,20 @@
                 //check the status description
                 if (root.StatusResponse.StatusDescription == "Success")
                 {
-                    //display success message
-                    await DisplayAlert("Status", "Rejected", "Okay", "Cancel");
+          
+                   assignment assignment1 = new assignment();
+                   string applicantDetails = Newtonsoft.Json.JsonConvert.SerializeObject(indigentDetails);
+                   assignment1.applicantDetails = applicantDetails;
+                   assignment1.fieldWorkerID = indigentDetails.fieldWorkerID;
+                   assignment1.status = "Rejected";
+                   assignment1._id = indigentDetails._id;
 
-                }
+                await App.Database.SaveItemAsync(assignment1);
+                await DisplayAlert("Status", "Saved SuccessFully", "Okay", "Cancel");
+                //await DisplayAlert("Status", "Accepted", "Okay", "Cancel");
+                await Navigation.PopAsync();
+
+            }
                 else
                 {
                     //display unsuccessfull message

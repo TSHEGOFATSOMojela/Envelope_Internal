@@ -1,13 +1,16 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Collections;
 using System.Text;
 using System.Threading.Tasks;
 using Envelope_Internal.Indigent.ViewModels;
 using Envelope_Internal.Indigent.Models;
-
+using Envelope_Internal;
+using SQLite;
 using System.Net.Http;
 using Newtonsoft.Json;
+using Envelope_Internal.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -20,22 +23,36 @@ namespace Envelope_Internal.Indigent.Assignment
         {
             InitializeComponent();
 
-            GetIndigentDetailsAsync();
+            //GetIndigentDetailsAsync();
 
 
         }
-
-        private void listviewContacts_ItemSelected(object sender, SelectedItemChangedEventArgs e)
+        protected override async void OnAppearing()
         {
+            base.OnAppearing();
+            assignment indigentApplicationDetails = new assignment();
+            Indigents indigent = new Indigents();
+            // Reset the 'resume' id, since we just want to re-start here
+            ((App)App.Current).ResumeAtTodoId = -1;
+            var myList = await App.Database.GetItemsAsync();
+            ArrayList accepted1 = new ArrayList();
 
-            var itemSelectedData = e.SelectedItem as Indigents;
+            for (int i = 0; i < myList.Count; i++)
+            {
+                //accepted1.Add(myList[i].applicantDetails);
 
-            Navigation.PushAsync(new AssignmentDetails(itemSelectedData));
-            Navigation.PopAsync();
+                accepted1.Add(Newtonsoft.Json.JsonConvert.DeserializeObject<Indigents>(myList[i].applicantDetails));
+                Console.WriteLine(accepted1);
+                Console.WriteLine("Hello");
+            }
+            Console.WriteLine(accepted1);
+            listView.ItemsSource = accepted1;
         }
+     
 
         HttpClient client = new HttpClient();
 
+        /*
         public async Task<List<Indigents>> GetIndigentDetailsAsync()
         {
 
@@ -52,5 +69,6 @@ namespace Envelope_Internal.Indigent.Assignment
                 throw exception;
             }
         }
+        */
     }
     }
