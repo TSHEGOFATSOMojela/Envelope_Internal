@@ -13,10 +13,10 @@
         <StackLayout >
 
          <Image  Margin="20" HorizontalOptions="Center" HeightRequest="120" WidthRequest="120"  Source="Ekurhulen.png"/>
-            
+          
          <Entry x:Name="username" Placeholder="Username" HorizontalTextAlignment="Center"/>
          <Entry x:Name="password" IsPassword="True" Placeholder="Password" HorizontalTextAlignment="Center"/>
-
+         
             <Button 
                 
                 BackgroundColor="DarkGray" 

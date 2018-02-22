@@ -2,11 +2,36 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Accepted.LivingConditions">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+    <ScrollView HorizontalOptions="FillAndExpand">
+
+        <StackLayout Orientation="Vertical">
+            
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Margin="8" Text="Application Reference No:" />
+                <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.ownership}"/>
+            </StackLayout>
+            
+            <BoxView  HeightRequest="5"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Margin="8" Text="EMM Account Number:"/>
+                <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.propertyKind}"/>
+            </StackLayout>
+            
+            <BoxView HeightRequest="5"/>
+            
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Margin="8" Text="Application Type:"/>
+                <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.innerSpace}"/>
+            </StackLayout>
+            
+            <BoxView HeightRequest="5"/>
+            <StackLayout Orientation="Horizontal">
+                <Label TextColor="Black" Margin="8" Text="Indigent Application Type:"/>
+                <Label TextColor="Black" Margin="10" BackgroundColor="Gray" HorizontalOptions="End"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.outerSpace}"/>
+            </StackLayout>
+     
+          
+         </StackLayout>
+        </ScrollView>
 </ContentPage>
