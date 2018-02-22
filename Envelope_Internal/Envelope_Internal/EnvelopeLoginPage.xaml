@@ -4,28 +4,53 @@
              xmlns:local="clr-namespace:Envelope_Internal"
              x:Class="Envelope_Internal.EnvelopeLoginPage"
              xmlns:custom="clr-namespace:Envelope_Internal"
-            
              BackgroundColor="White"
              Padding="25"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.BarTextColor = "White">
-    <ContentPage.Content>
-        <StackLayout  Padding="10">
+    <ScrollView>
+        <StackLayout>
+
+
+
+            <Image  Margin="20"
+                    HorizontalOptions="Center"
+                    HeightRequest="120"
+                    WidthRequest="120" 
+                    Source="Ekurhulen.png"/>
+
             <custom:CustomEntry
+                
+                                x:name="Username"
                                 CornerRadius="18"
                                 IsCurvedCornersEnabled="True"
-                                BorderColor="BlueViolet"    
+                                BorderColor="DarkBlue"    
                                 HorizontalTextAlignment="Center"
                                 FontSize="17"
                                 HeightRequest="40"
-                                Placeholder="Custom Entry"
+                                Placeholder="Username"
                                 PlaceholderColor="Gray"
                                 TextColor="Black"
                                 FontAttributes="Bold"
                                 WidthRequest="100"/>
-            <Entry TextColor="Red"
-                   PlaceholderColor="#7AB0DE"
-                   Placeholder="Normal Entry" />
+
+
+
+            <custom:CustomEntry
+                
+                                x:name="Password"
+                                CornerRadius="18"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="DarkBlue"    
+                                HorizontalTextAlignment="Center"
+                                FontSize="17"
+                                HeightRequest="40"
+                                Placeholder="Password"
+                                PlaceholderColor="Gray"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                WidthRequest="100"/>
+
 
 
 
@@ -46,7 +71,8 @@
 
             </Button>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
+
 </ContentPage>
       
 
