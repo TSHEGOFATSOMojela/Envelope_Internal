@@ -91,6 +91,7 @@
       <DependentUpon>EnvelopeMainPage.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)RoundedButton.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings\settingLv.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Settings\SettingsPage.xaml.cs">
       <DependentUpon>SettingsPage.xaml</DependentUpon>

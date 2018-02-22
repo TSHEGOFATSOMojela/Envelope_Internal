@@ -11,7 +11,7 @@
     
     <ScrollView  HorizontalOptions="FillAndExpand">
         <StackLayout>
-            <Image  Margin="20" HorizontalOptions="Center"
+            <Image  Margin="30" HorizontalOptions="Center"
                                     HeightRequest="120"
                                     WidthRequest="120" 
                                     Source="Ekurhulen.png"/>
@@ -46,24 +46,22 @@
 
 
 
-            <Button 
-                
-                BackgroundColor="DarkGray" 
+            <local:RoundedButton
+                Margin="20"
+                BackgroundColor="DarkBlue" 
                 TextColor="White"
                 x:Name="login"
-                Text="Log In"
-                Clicked="login_Clicked">
-                <Button.Image>
-                    <OnPlatform x:TypeArguments="FileImageSource"
-                                iOS="ic_lock_black_24dp.png"                     
-                                Android="ic_lock_black_24dp.png"                     
-                               />
+                Text="login"
+                Clicked="login_Clicked"
+                Grid.Row="1"
+                Grid.Column="2">
+     
 
-                </Button.Image>
-
-            </Button>
+            </local:RoundedButton>
            
-                </StackLayout>
+
+
+        </StackLayout>
     </ScrollView>
 </ContentPage>
       

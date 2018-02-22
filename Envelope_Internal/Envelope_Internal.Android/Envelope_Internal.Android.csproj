@@ -66,7 +66,7 @@
       <Version>0.2.3</Version>
     </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
-      <Version>2.0.1-beta</Version>
+      <Version>2.0.1.48-beta</Version>
     </PackageReference>
     <PackageReference Include="Plugins.Forms.EntryValidator">
       <Version>1.0.47</Version>
@@ -119,6 +119,9 @@
     <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
+    <PackageReference Include="XLabs.Forms">
+      <Version>2.0.5782</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CustomEntryRenderer.cs" />
@@ -127,6 +130,7 @@
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButtonRenderer.cs" />
     <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
