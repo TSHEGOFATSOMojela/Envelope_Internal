@@ -44,13 +44,13 @@
             }
 
             //Signatures Button
-            private async void Signatures(object sender, EventArgs e)
+            private async void Signature(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new Signatures());
             }
 
             //Documents Button
-            private async void Documents(object sender, EventArgs e)
+            private async void Document(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new Documents());
             }
