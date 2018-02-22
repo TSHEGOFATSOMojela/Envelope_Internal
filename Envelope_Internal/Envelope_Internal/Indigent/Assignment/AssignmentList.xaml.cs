@@ -47,7 +47,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
                 HttpClient client = new HttpClient();
                 //Get Assignment list details
-                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/ + username");
+                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
                 //DeserializeObject Indigents
                 var IndigentDetails = JsonConvert.DeserializeObject<List<Indigents>>(response);
                 //Binding Assignment list details to View

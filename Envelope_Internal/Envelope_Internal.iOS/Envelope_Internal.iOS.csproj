@@ -132,8 +132,14 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.Controls.FloatingLabelEntry">
+      <Version>0.2.3</Version>
+    </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
       <Version>2.0.1.48-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Plugins.Forms.EntryValidator">
+      <Version>1.0.47</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.5.166-beta</Version>
@@ -152,6 +158,12 @@
     </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.FormsPlugin.IconEntry">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.CustomReturnEntry">
+      <Version>4.1.0-pre1</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.2</Version>
