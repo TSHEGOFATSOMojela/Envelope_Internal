@@ -32,7 +32,9 @@
             //Living Condition Button
             private async void Living_Conditions(object sender, EventArgs e)
             {
-                await Navigation.PushAsync(new LivingConditions());
+            //Binding Item data
+            var indigentDetails = (Indigents)BindingContext;
+            await Navigation.PushAsync(new LivingConditions(indigentDetails));
             }
 
             //HouseHold memebers Button
