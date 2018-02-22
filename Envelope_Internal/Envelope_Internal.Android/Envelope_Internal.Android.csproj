@@ -62,8 +62,14 @@
     <PackageReference Include="Newtonsoft.Json">
       <Version>11.0.1</Version>
     </PackageReference>
+    <PackageReference Include="Plugin.Controls.FloatingLabelEntry">
+      <Version>0.2.3</Version>
+    </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
       <Version>2.0.1-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Plugins.Forms.EntryValidator">
+      <Version>1.0.47</Version>
     </PackageReference>
     <PackageReference Include="sqlite-net-pcl">
       <Version>1.5.166-beta</Version>
@@ -98,6 +104,12 @@
     <PackageReference Include="Toasts.Forms.Plugin">
       <Version>3.3.1</Version>
     </PackageReference>
+    <PackageReference Include="Xam.FormsPlugin.IconEntry">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.CustomReturnEntry">
+      <Version>4.1.0-pre1</Version>
+    </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.1</Version>
     </PackageReference>
@@ -109,6 +121,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomEntryRenderer.cs" />
     <Compile Include="FileHelper.cs" />
     <Compile Include="Indigent\Assignment\acceptedResponse.cs" />
     <Compile Include="MainActivity.cs" />
