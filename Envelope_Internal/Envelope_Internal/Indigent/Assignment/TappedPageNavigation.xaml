@@ -8,6 +8,11 @@
                  NavigationPage.HasBackButton="False"
                  NavigationPage.HasNavigationBar="True"
                  Title="{Binding Title}">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem 
+                        
+                         Text="Logout"/>
+    </ContentPage.ToolbarItems>
 
     <!--Pages can be added as references or inline-->
 

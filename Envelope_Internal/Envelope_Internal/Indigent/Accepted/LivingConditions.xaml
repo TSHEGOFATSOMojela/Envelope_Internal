@@ -1,37 +1,173 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Envelope_Internal.Indigent.Accepted.LivingConditions">
+             x:Class="Envelope_Internal.Indigent.Accepted.LivingConditions"
+              xmlns:local="clr-namespace:Envelope_Internal"
+              xmlns:controls="clr-namespace:ImageCircle.Forms.Plugin.Abstractions;assembly=ImageCircle.Forms.Plugin.Abstractions"
+             xmlns:custom="clr-namespace:Envelope_Internal"
+             Title="Living Conditions">
     <ScrollView HorizontalOptions="FillAndExpand">
+        
+    
 
         <StackLayout Orientation="Vertical">
-
+            <custom:CustomEntry
+                                CornerRadius="18"
+                                x:name="CommentsLivingCon"
+                                IsCurvedCornersEnabled="True"
+                                BorderColor="DarkBlue"    
+                                HorizontalTextAlignment="Center"
+                                FontSize="17"
+                                HeightRequest="90"
+                                Placeholder="Comments"
+                                PlaceholderColor="Gray"
+                                TextColor="Black"
+                                FontAttributes="Bold"
+                                WidthRequest="100"/>
+            <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
-                <Label TextColor="Black" Margin="8" Text="Application Reference No:" />
-                <Label TextColor="Black" Margin="10"  HorizontalOptions="Start" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.ownership}"/>
+                <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" Text="Application Reference No" />
+                <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.ownership}"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
 
             <StackLayout Orientation="Vertical">
-                <Label TextColor="Black" Margin="8" Text="EMM Account Number:"/>
-                <Label TextColor="Black" Margin="10"  HorizontalOptions="Start" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.propertyKind}"/>
+                <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" Text="EMM Account Number"/>
+                <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center" Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.propertyKind}"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
 
             <StackLayout Orientation="Vertical">
-                <Label TextColor="Black" Margin="8" Text="Application Type:"/>
-                <Label TextColor="Black" Margin="10" HorizontalOptions="Start"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.innerSpace}"/>
+                <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" Text="Application Type"/>
+                <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.innerSpace}"/>
             </StackLayout>
 
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
-                <Label TextColor="Black" Margin="8" Text="Indigent Application Type:"/>
-                <Label TextColor="Black" Margin="10"  HorizontalOptions="Start"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.outerSpace}"/>
+                <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" Text="Indigent Application Type"/>
+                <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"   Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.outerSpace}"/>
             </StackLayout>
-     
-          
-         </StackLayout>
+            <BoxView HeightRequest="1" BackgroundColor="Black"/>
+            <StackLayout Orientation="Vertical">
+                <StackLayout Orientation="Horizontal">
+                <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+
+                </StackLayout>
+
+                <StackLayout Orientation="Horizontal">
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+
+                </StackLayout>
+                <StackLayout Orientation="Horizontal">
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+                    <controls:CircleImage  
+                        Source="livingC.png"
+                        WidthRequest="80" 
+                        HeightRequest="80" 
+                        HorizontalOptions="Start"
+                        VerticalOptions="Start"
+                        BackgroundColor="Gray"
+                        Margin="25"></controls:CircleImage>
+
+
+                </StackLayout>
+                <local:RoundedButton
+              
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="Save_Living"
+                Text="Save"
+                Margin="20"
+                Grid.Row="1"
+                Grid.Column="2">
+                </local:RoundedButton>
+            </StackLayout>
+        </StackLayout>
         </ScrollView>
 </ContentPage>
