@@ -4,7 +4,7 @@
                  x:Class="Envelope_Internal.Indigent.Assignment.AcceptedAssignmentsDetails"
                  xmlns:local="clr-namespace:Envelope_Internal"
                  Title="Assignment">
-                 
+
     <ScrollView HorizontalOptions="FillAndExpand">
 
         <StackLayout
@@ -147,7 +147,29 @@
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Ward Number"/>
                 <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.wardNo}"/>
+                <BoxView HeightRequest="1" BackgroundColor="Black"/>
             </StackLayout>
+
+            <local:RoundedButton
+               
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="ComplteAssign"
+                Text="Complete"
+                Margin="20"
+                Grid.Row="1"
+                Grid.Column="2">
+            </local:RoundedButton>
+            <local:RoundedButton
+              
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="Sav_Location"
+                Text="Save Location"
+                Margin="20"
+                Grid.Row="1"
+                Grid.Column="2">
+            </local:RoundedButton>
         </StackLayout>
     </ScrollView>
 </ContentPage>

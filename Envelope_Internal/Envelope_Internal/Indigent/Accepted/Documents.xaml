@@ -1,12 +1,36 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Envelope_Internal.Indigent.Accepted.Documents">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
+             x:Class="Envelope_Internal.Indigent.Accepted.Documents"
+               xmlns:local="clr-namespace:Envelope_Internal"
+              Title="Documents">
+    <ScrollView HorizontalOptions="FillAndExpand">
+
+        <StackLayout Orientation="Vertical">
+            <StackLayout Orientation="Vertical">
+                <local:RoundedButton
+               
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="idcopybook"
+                Text="Copy of ID book"
+               Margin="20"
+                Grid.Row="1"
+                Grid.Column="2">
+        </local:RoundedButton>
+        <local:RoundedButton
+              
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="Sav_Location"
+                Text="Municipal Statement of Account"
+               Margin="20"
+                Grid.Row="1"
+                Grid.Column="2">
+        </local:RoundedButton>
+            </StackLayout>
         </StackLayout>
-    </ContentPage.Content>
+    </ScrollView>
+
+              
 </ContentPage>

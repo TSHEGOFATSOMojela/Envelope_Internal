@@ -327,6 +327,9 @@
   <ItemGroup>
     <AndroidResource Include="Resources\drawable\iconMain.png" />
   </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\livingC.png" />
+  </ItemGroup>
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
 </Project>
