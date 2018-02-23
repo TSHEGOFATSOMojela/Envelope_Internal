@@ -15,6 +15,7 @@
                 x:Name="idcopybook"
                 Text="Copy of ID book"
                Margin="20"
+                     Clicked="idcopybooks"
                 Grid.Row="1"
                 Grid.Column="2">
         </local:RoundedButton>
@@ -22,7 +23,8 @@
               
                 BackgroundColor="Gray" 
                 TextColor="White"
-                x:Name="Sav_Location"
+                x:Name="MancipalityStatement"
+             Clicked="StatementAccount"
                 Text="Municipal Statement of Account"
                Margin="20"
                 Grid.Row="1"

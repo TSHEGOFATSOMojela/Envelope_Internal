@@ -16,5 +16,19 @@ namespace Envelope_Internal.Indigent.Accepted
 		{
 			InitializeComponent ();
 		}
-	}
+
+        private async void idcopybooks(object sender, EventArgs e)
+        {
+            //Navigate to Envelope Main Page
+            //((App)App.Current).username = username.ToString();
+            await Navigation.PushAsync(new IdCopyBooks());
+        }
+
+        private async void StatementAccount(object sender, EventArgs e)
+        {
+            //Navigate to Envelope Main Page
+            //((App)App.Current).username = username.ToString();
+            await Navigation.PushAsync(new StatementAccount());
+        }
+    }
 }
