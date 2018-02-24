@@ -11,6 +11,8 @@
     
 
         <StackLayout Orientation="Vertical">
+            
+            
             <custom:CustomEntry
                                 CornerRadius="18"
                                 Margin="4"
@@ -51,129 +53,63 @@
                 <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"   Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialDetail.outerSpace}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
+            
             <StackLayout  HorizontalOptions="Center"  Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontAttributes="Bold"  HorizontalTextAlignment="Center" Text="ADD IMAGES"/>
-                <StackLayout        HorizontalOptions="Center" Orientation="Horizontal">
-                   
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
+                
+                <StackLayout  HorizontalOptions="Center" Orientation="Vertical">
+
 
                     <controls:CircleImage  
                         Source="livingC.png"
                         WidthRequest="80" 
                         HeightRequest="80" 
+                         x:Name="image"
                         HorizontalOptions="End"
                         VerticalOptions="Start"
                         BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
+                        Margin="25">
+                    </controls:CircleImage>
 
 
-                </StackLayout>
-                <StackLayout        HorizontalOptions="Center" Orientation="Horizontal">
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-
-                </StackLayout>
-
-                <StackLayout        HorizontalOptions="Center" Orientation="Horizontal">
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-
-                </StackLayout>
-                <StackLayout        HorizontalOptions="Center"  Orientation="Horizontal">
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-
-                </StackLayout>
-                <StackLayout        HorizontalOptions="Center" Orientation="Horizontal">
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="Start"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-                    <controls:CircleImage  
-                        Source="livingC.png"
-                        WidthRequest="80" 
-                        HeightRequest="80" 
-                        HorizontalOptions="End"
-                        VerticalOptions="Start"
-                        BackgroundColor="Gray"
-                        Margin="25"></controls:CircleImage>
-
-
-                </StackLayout>
-                <StackLayout        HorizontalOptions="Center" Orientation="Horizontal">
-                <local:RoundedButton
+                
+             
+                
+                
+                <StackLayout   HorizontalOptions="Center" Orientation="Vertical">
+                    <local:RoundedButton
               
                 BackgroundColor="Gray" 
                 TextColor="White"
-                x:Name="Save_Living"
+                x:Name="upload"
                 HorizontalOptions="Center"
-                Text="Save"
-                Margin="20"
+                 Margin="20"
+                        Clicked="uploadAphoto"
+                Text="uploadAphoto"
                 Grid.Row="1"
                 Grid.Column="2">
-                </local:RoundedButton>
-                </StackLayout>
+                    </local:RoundedButton>
+                    
+                        <local:RoundedButton
+              
+                BackgroundColor="Gray" 
+                TextColor="White"
+                x:Name="upld"
+                HorizontalOptions="Center"
+                 Margin="20"
+                        Clicked="TakePhoto"
+                Text="TakePhoto"
+                Grid.Row="1"
+                Grid.Column="2">
+                        </local:RoundedButton>
+                    </StackLayout>
+               
+            
+            
             </StackLayout>
         </StackLayout>
-        </ScrollView>
+            
+            
+        </StackLayout>
+    </ScrollView>
 </ContentPage>

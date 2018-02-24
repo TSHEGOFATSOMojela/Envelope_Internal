@@ -1,5 +1,25 @@
-<?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="1" android:versionName="1.0" package="com.companyname.Envelope_Internal">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+          android:versionCode="1"
+          android:versionName="1.0"
+          package="com.companyname.Envelope_Internal"
+          android:installLocation="auto">
 	<uses-sdk android:minSdkVersion="15" />
-	<application android:label="Envelope_Internal.Android"></application>
+	<uses-permission android:name="android.permission.ACCESS_CHECKIN_PROPERTIES" />
+	<uses-permission android:name="android.permission.ACCOUNT_MANAGER" />
+	<uses-permission android:name="android.permission.CAMERA" />
+	<uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+	<uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+	<application android:label="Envelope_Internal.Android">
+    
+    <provider android:name="android.support.v4.content.FileProvider" 
+				android:authorities="com.companyname.Envelope_Internal.fileprovider" 
+				android:exported="false" 
+				android:grantUriPermissions="true">
+			<meta-data android:name="android.support.FILE_PROVIDER_PATHS" 
+				android:resource="@xml/file_paths"></meta-data>
+</provider>
+
+
+  </application>
 </manifest>

@@ -1,7 +1,9 @@
 ﻿using System;
-
+using Plugin.Permissions;
+using Plugin.Permissions.Abstractions;
 using Android.App;
 using Android.Content.PM;
+using Envelope_Internal.Indigent.Accepted;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
@@ -18,10 +20,11 @@ namespace Envelope_Internal.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
-
+            Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
         }
+
     }
 }
 
