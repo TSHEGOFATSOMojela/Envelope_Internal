@@ -2,6 +2,32 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Accepted.Signatures"
-              Title="Signature">
+             xmlns:local="clr-namespace:Envelope_Internal"
+             xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
+              Title="Signature"
+             Padding="20">
+    <ScrollView>
+        
+    <forms:SignaturePadView
+          
+             x:Name="FooSignaturePad"
+            CaptionText="Tshegofatso Mojela"
+            BackgroundColor="Black"
+            WidthRequest="250"
+            HeightRequest="350"
+            StrokeColor="Gray"
+            StrokeWidth="3"/>
+   
 
+    <local:RoundedButton
+               BackgroundColor="Gray" 
+                TextColor="White"
+                
+       Text="submit"
+        Clicked="submit"
+                Grid.Row="1"
+                Grid.Column="2">
+    </local:RoundedButton>
+         
+    </ScrollView>
 </ContentPage>

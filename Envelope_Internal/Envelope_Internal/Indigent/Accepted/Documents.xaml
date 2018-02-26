@@ -3,36 +3,37 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Accepted.Documents"
                xmlns:local="clr-namespace:Envelope_Internal"
+                    
               Title="Documents">
+
     <ScrollView HorizontalOptions="FillAndExpand">
 
-        <StackLayout Orientation="Vertical">
-            <StackLayout Orientation="Vertical">
-                <local:RoundedButton
-               
-                BackgroundColor="Gray" 
+        <StackLayout
+            Margin="20"
+            Orientation="Vertical">
+
+            <local:RoundedButton
+               BackgroundColor="Gray" 
                 TextColor="White"
+                
                 x:Name="idcopybook"
                 Text="Copy of ID book"
-                HorizontalOptions="Center"
-                 Margin="20"
-                Clicked="idcopybooks"
+                  Clicked="idcopybooks"
                 Grid.Row="1"
                 Grid.Column="2">
-        </local:RoundedButton>
-        <local:RoundedButton
-              
-                BackgroundColor="Gray" 
+            </local:RoundedButton>
+
+            <local:RoundedButton
+               BackgroundColor="Gray" 
                 TextColor="White"
-                x:Name="MancipalityStatement"
+                  x:Name="MancipalityStatement"
                 Clicked="StatementAccount"
-                Text="Municipal Statement of Account"
-                HorizontalOptions="Center"
-                 Margin="20"
+                Text="Statement of Account"
                 Grid.Row="1"
                 Grid.Column="2">
-        </local:RoundedButton>
-            </StackLayout>
+            </local:RoundedButton>
+   
+      
         </StackLayout>
     </ScrollView>
 
