@@ -3,5 +3,14 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Accepted.HouseHoldDetails"
               Title="House Hold">
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Name="_Log out"
 
+                         Order="Secondary"
+                        
+                         Text="Log out"
+                         
+                        Priority="1"/>
+
+    </ContentPage.ToolbarItems>
 </ContentPage>

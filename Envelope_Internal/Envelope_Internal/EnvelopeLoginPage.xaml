@@ -10,14 +10,17 @@
              NavigationPage.BarTextColor = "White">
     
     <ScrollView  HorizontalOptions="FillAndExpand">
-        <StackLayout>
+
+  
+
+            <StackLayout>
             <Image  Margin="30" HorizontalOptions="Center"
                                     HeightRequest="120"
                                     WidthRequest="120" 
                                     Source="Ekurhulen.png"/>
             <custom:CustomEntry
                                 CornerRadius="18"
-                                x:name="username"
+                               x:Name="username"
                                 IsCurvedCornersEnabled="True"
                                 BorderColor="DarkBlue"    
                                 HorizontalTextAlignment="Center"
@@ -26,12 +29,14 @@
                                 Placeholder="Username"
                                 PlaceholderColor="Gray"
                                 TextColor="Black"
+                                
                                 FontAttributes="Bold"
                                 WidthRequest="100"/>
 
             <custom:CustomEntry
                                 CornerRadius="18"
-                                x:name="Password"
+                               x:Name="password"
+                                IsPassword="True"
                                 IsCurvedCornersEnabled="True"
                                 BorderColor="DarkBlue"    
                                 HorizontalTextAlignment="Center"
@@ -41,7 +46,8 @@
                                 PlaceholderColor="Gray"
                                 TextColor="Black"
                                 FontAttributes="Bold"
-                                WidthRequest="100"/>
+                                WidthRequest="100"
+                                />
 
 
 
@@ -52,15 +58,17 @@
                 TextColor="White"
                 x:Name="login"
                 Text="login"
+                 FontSize="10"
                 Clicked="login_Clicked"
                 Grid.Row="1"
                 Grid.Column="2">
      
 
             </local:RoundedButton>
-           
 
 
+
+            <ActivityIndicator x:Name="ProgressLoader" IsRunning="False" VerticalOptions="Start" />
         </StackLayout>
     </ScrollView>
 </ContentPage>

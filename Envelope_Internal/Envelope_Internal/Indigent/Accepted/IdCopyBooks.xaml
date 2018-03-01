@@ -3,6 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Envelope_Internal.Indigent.Accepted.IdCopyBooks"
              Title="ID Copy Books">
+    <ContentPage.ToolbarItems>
+
+        <ToolbarItem Name="_Log out"
+
+                         Order="Secondary"
+                        
+                         Text="Log out"
+                         
+                        Priority="1"/>
+
+    </ContentPage.ToolbarItems>
     <ContentPage.Content>
         <StackLayout>
             <Label Text="Welcome to Xamarin.Forms!"
