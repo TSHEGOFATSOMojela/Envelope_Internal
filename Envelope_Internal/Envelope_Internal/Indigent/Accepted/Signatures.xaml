@@ -16,28 +16,19 @@
                         Priority="1"/>
 
     </ContentPage.ToolbarItems>
-    <ScrollView>
-        
-    <forms:SignaturePadView
-          
-             x:Name="FooSignaturePad"
-            CaptionText="Tshegofatso Mojela"
-            BackgroundColor="Black"
-            WidthRequest="250"
-            HeightRequest="350"
-            StrokeColor="Gray"
-            StrokeWidth="3"/>
-   
+    <StackLayout>
+        <forms:SignaturePadView StrokeWidth="5"
+                                    WidthRequest="280"
+                                    HeightRequest="350"
+	                                BackgroundColor="White"
+	                                StrokeColor="Black"
+                                    CaptionText="Assinatura"
+                                    x:Name="Pad">
 
-    <local:RoundedButton
-               BackgroundColor="Gray" 
-                TextColor="White"
-                
-       Text="submit"
-        Clicked="submit"
-                Grid.Row="1"
-                Grid.Column="2">
-    </local:RoundedButton>
-         
-    </ScrollView>
+        </forms:SignaturePadView>
+
+        <Button Clicked="Save" Text="Save"/>
+
+
+    </StackLayout>
 </ContentPage>
