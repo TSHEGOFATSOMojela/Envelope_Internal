@@ -18,16 +18,13 @@ namespace Envelope_Internal.Indigent.Accepted
 			InitializeComponent ();
 		}
 
-        private void Clear(Object sender, EventArgs e)
-        {
-            FooSignaturePad.Clear();
-        }
+     
 
 
-        private async void submit(Object sender, EventArgs e)
+        public async void Save(object sender, EventArgs eventArgs)
         {
-            var signedImageStream = await FooSignaturePad.GetImageStreamAsync(SignatureImageFormat.Jpeg);
-            await DisplayAlert("Acme Company", "your signed agreement has been sent", "ok");
+
+            Stream stream = await Pad.GetImageStreamAsync(SignatureImageFormat.Jpeg);
         }
     }
 }
