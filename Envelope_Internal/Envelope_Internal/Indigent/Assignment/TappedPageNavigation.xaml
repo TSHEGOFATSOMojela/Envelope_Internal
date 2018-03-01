@@ -8,13 +8,22 @@
                  NavigationPage.HasBackButton="False"
                  NavigationPage.HasNavigationBar="True"
                  Title="{Binding Title}">
-    <ContentPage.ToolbarItems>
-        <ToolbarItem 
-                        
-                         Text="Logout"/>
-    </ContentPage.ToolbarItems>
+   
+        <ContentPage.ToolbarItems>
 
-    <!--Pages can be added as references or inline-->
+       <ToolbarItem
+         Name="_Log out"
+                       
+                         Order="Secondary"
+
+                         Text="Log out"
+                         
+                        Priority="1"/>
+
+        </ContentPage.ToolbarItems>
+
+
+        <!--Pages can be added as references or inline-->
 
     <pages:AssignmentList/>
     <pages:AccptedAssignmentsList/>

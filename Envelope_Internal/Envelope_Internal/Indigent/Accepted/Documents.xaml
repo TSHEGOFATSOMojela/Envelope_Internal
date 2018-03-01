@@ -5,7 +5,17 @@
                xmlns:local="clr-namespace:Envelope_Internal"
                     
               Title="Documents">
+    <ContentPage.ToolbarItems>
 
+        <ToolbarItem Name="_Log out"
+
+                         Order="Secondary"
+                        
+                         Text="Log out"
+                         
+                        Priority="1"/>
+
+    </ContentPage.ToolbarItems>
     <ScrollView HorizontalOptions="FillAndExpand">
 
         <StackLayout
@@ -19,6 +29,7 @@
                 x:Name="idcopybook"
                 Text="Copy of ID book"
                   Clicked="idcopybooks"
+                 FontSize="10"
                 Grid.Row="1"
                 Grid.Column="2">
             </local:RoundedButton>
@@ -29,6 +40,7 @@
                   x:Name="MancipalityStatement"
                 Clicked="StatementAccount"
                 Text="Statement of Account"
+                 FontSize="10"
                 Grid.Row="1"
                 Grid.Column="2">
             </local:RoundedButton>

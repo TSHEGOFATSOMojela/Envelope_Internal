@@ -28,26 +28,26 @@
                                 </Grid.RowDefinitions>
                                 <StackLayout Orientation="Vertical">
                                     <StackLayout Orientation="Vertical" >
-                                        <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Application Reference No" />
+                                        <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Application Reference No" />
 
-                                        <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
+                                        <Label TextColor="Gray" Margin="3" FontSize="10"  HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationRefNo}"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical" >
-                                        <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="First Names" />
-                                        <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.householdDetail[0].personDetail.firstNames}"/>
+                                        <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="First Names" />
+                                        <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.householdDetail[0].personDetail.firstNames}"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical" >
-                                        <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Application Date" />
-                                        <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationDate}"/>
+                                        <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Application Date" />
+                                        <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.indigentApplicationHeader.applicationDate}"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical" >
-                                        <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Address Line"/>
+                                        <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Address Line"/>
 
-                                        <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.addressLine1}"/>
+                                        <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.addressLine1}"/>
                                     </StackLayout>
                                     <StackLayout Orientation="Vertical" >
-                                        <Label TextColor="Black" Margin="3" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Suburb" />
-                                        <Label TextColor="Gray" Margin="3" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.suburb}"/>
+                                        <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Suburb" />
+                                        <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.originalApplicantDetail.residentialAddress.suburb}"/>
 
                                         <local:RoundedButton
               
