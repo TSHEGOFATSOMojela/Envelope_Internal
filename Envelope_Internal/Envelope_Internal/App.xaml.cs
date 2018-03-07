@@ -38,6 +38,7 @@ namespace Envelope_Internal
             }
         }
         public string username { get; set; }
+        public string refNo { get; set; }
         public int ResumeAtTodoId { get; set; }
 
         protected override void OnStart ()

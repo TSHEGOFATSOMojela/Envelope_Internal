@@ -22,9 +22,11 @@ namespace Envelope_Internal
 			    InitializeComponent();
             
             }
+    
+
         //Orientation change
-       
-  
+
+
         private async void login_Clicked(object sender, EventArgs e)
         {
 

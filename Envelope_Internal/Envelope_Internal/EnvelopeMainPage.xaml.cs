@@ -19,7 +19,7 @@
 		    public EnvelopeMainPage()
 		    {
 			    InitializeComponent ();
-            Title = ((App)App.Current).username.ToString();
+          //  Title = ((App)App.Current).username.ToString();
             //Binding Items to View
             SettingListView.ItemsSource = new List<settingLv>
                 {
