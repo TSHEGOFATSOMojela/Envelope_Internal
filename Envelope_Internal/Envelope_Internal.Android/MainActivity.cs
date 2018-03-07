@@ -1,6 +1,6 @@
 ﻿using System;
 using Plugin.Permissions;
-using Plugin.Permissions.Abstractions;
+
 using Android.App;
 using Android.Content.PM;
 using Envelope_Internal.Indigent.Accepted;
@@ -23,6 +23,10 @@ namespace Envelope_Internal.Droid
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());
+        }
+        public override void OnRequestPermissionsResult(int requestCode, string[] permissions, Permission[] grantResults)
+        {
+            PermissionsImplementation.Current.OnRequestPermissionsResult(requestCode, permissions, grantResults);
         }
 
     }

@@ -5,7 +5,8 @@
              xmlns:local="clr-namespace:Envelope_Internal"
              xmlns:forms="clr-namespace:SignaturePad.Forms;assembly=SignaturePad.Forms"
               Title="Signature"
-             Padding="20">
+             Padding="20"
+             BackgroundColor="White">
     <ContentPage.ToolbarItems>
         <ToolbarItem Name="_Log out"
 
@@ -22,13 +23,22 @@
                                     HeightRequest="350"
 	                                BackgroundColor="White"
 	                                StrokeColor="Black"
-                                    CaptionText="Assinatura"
+                                    CaptionText="Signature"
                                     x:Name="Pad">
 
         </forms:SignaturePadView>
-
-        <Button Clicked="Save" Text="Save"/>
-
+        
+        <local:RoundedButton
+            
+          BackgroundColor="Gray" 
+          TextColor="White"
+          x:Name="SignaturePad"
+          Clicked="Save"
+          Text="Save"
+          FontSize="10"
+          Grid.Row="1"
+          Grid.Column="2">
+        </local:RoundedButton>
 
     </StackLayout>
 </ContentPage>
