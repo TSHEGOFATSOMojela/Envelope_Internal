@@ -11,6 +11,7 @@ using Envelope_Internal.Droid;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Xamarin.Forms;
+using System.Timers;
 using Plugin.Media;
 using SQLite;
 using Envelope_Internal.Indigent.Assignment;
@@ -25,11 +26,17 @@ namespace Envelope_Internal.Indigent.Accepted
         public HouseHoldDetails (Indigents indigentDetails)
 		{
 			InitializeComponent ();
-            BindingContext = indigentDetails;
-           
+            var myList = indigentDetails.indigentApplicationDetails.householdDetail;
+            //ArrayList accepted1 = new ArrayList();
+
+            for (int i = 0; i < myList.Count; i++)
+            {
+                
+                BindingContext = indigentDetails.indigentApplicationDetails.householdDetail[i];
+            }
         }
 
+    
 
-
-	}
+    }
 }
