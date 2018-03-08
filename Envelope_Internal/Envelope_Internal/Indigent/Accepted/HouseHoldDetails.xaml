@@ -5,7 +5,7 @@
               Title="HouseHold">
     <ContentPage.ToolbarItems>
         <ToolbarItem
-       Text="{Binding indigentApplicationDetails.householdDetail.personDetail.currentApplicationRefNo}"/>
+       Text="{Binding currentApplicationRefNo}"/>
         
         <ToolbarItem Name="_Log out"
 
@@ -28,42 +28,42 @@
                 Orientation="Vertical" >
                 <BoxView HeightRequest="1" BackgroundColor="Black"/>
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Verified" />
-                <Switch x:Name="verify"/>
+                <Switch HorizontalOptions="Center"  x:Name="verify"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
-                <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold"  Text="Comments"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.householdDetail.personDetail.remarks}"/>
+                <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold"  Text="Comments"/> 
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding personDetail.remarks}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold"  Text="Relationship"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.householdDetail.personDetail.relationship}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding personDetail.relationship}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Initials"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"    Text="{Binding indigentApplicationDetails.householdDetail.personDetail.initials}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"    Text="{Binding personDetail.initials}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Surname"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding indigentApplicationDetails.householdDetail.personDetail.surname}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"  Text="{Binding personDetail.surname}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="First Names"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"   Text="{Binding indigentApplicationDetails.householdDetail.personDetail.firstNames}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"   Text="{Binding personDetail.firstNames}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Gender"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"    Text="{Binding indigentApplicationDetails.householdDetail.personDetail.gender}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"    Text="{Binding personDetail.gender}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
             <StackLayout Orientation="Vertical">
                 <Label TextColor="Black" Margin="3" FontSize="10" HorizontalTextAlignment="Center" FontAttributes="Bold" Text="Birth Date"/>
-                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"   Text="{Binding indigentApplicationDetails.householdDetail.personDetail.birthDate | date:'dd/MM/yyyy'}"/>
+                <Label TextColor="Gray" Margin="3" FontSize="10" HorizontalTextAlignment="Center"   Text="{Binding personDetail.birthDate}"/>
             </StackLayout>
             <BoxView HeightRequest="1" BackgroundColor="Black"/>
            
