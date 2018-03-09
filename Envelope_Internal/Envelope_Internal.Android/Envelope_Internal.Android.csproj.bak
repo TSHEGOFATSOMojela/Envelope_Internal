@@ -28,6 +28,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <AndroidLinkMode>None</AndroidLinkMode>
+    <AotAssemblies>false</AotAssemblies>
+    <EnableLLVM>false</EnableLLVM>
+    <BundleAssemblies>false</BundleAssemblies>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -47,23 +50,127 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <PackageReference Include="BeaverSoft.StrongBeaver.Services.Geolocator.Xamarin">
+      <Version>0.9.0-alpha</Version>
+    </PackageReference>
+    <PackageReference Include="bootstrap">
+      <Version>4.0.0</Version>
+    </PackageReference>
+    <PackageReference Include="DK.SlidingPanel">
+      <Version>2.1.0</Version>
+    </PackageReference>
+    <PackageReference Include="DT.InsightsToHockey">
+      <Version>0.0.2</Version>
+    </PackageReference>
+    <PackageReference Include="FrazzApps.Xamarin.Forms.Geolocator">
+      <Version>1.1.1-alpha</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Build.Framework">
+      <Version>15.5.180</Version>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Net.Http">
+      <Version>2.2.29</Version>
+    </PackageReference>
+    <PackageReference Include="Naxam.BottomTabbedPage">
+      <Version>0.1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json">
+      <Version>11.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.Controls.FloatingLabelEntry">
+      <Version>0.2.3</Version>
+    </PackageReference>
+    <PackageReference Include="Plugin.Permissions">
+      <Version>2.2.1</Version>
+    </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
-      <Version>1.3.9</Version>
+      <Version>2.0.1.48-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Plugins.Forms.EntryValidator">
+      <Version>1.0.47</Version>
+    </PackageReference>
+    <PackageReference Include="signaturepad">
+      <Version>1.5.3</Version>
+    </PackageReference>
+    <PackageReference Include="SignaturePad.Xamarin.Forms.PCL">
+      <Version>1.0.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="sqlite-net-pcl">
+      <Version>1.5.166-beta</Version>
+    </PackageReference>
+    <PackageReference Include="SQLite.Net-PCL">
+      <Version>3.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="SQLite.Net.Async-PCL">
+      <Version>3.1.1</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCL.bundle_green">
+      <Version>0.9.4-pre1</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.bundle_green">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.core">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.android">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.lib.e_sqlite3.osx">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.android">
+      <Version>1.1.9</Version>
+    </PackageReference>
+    <PackageReference Include="System.Net.Http">
+      <Version>4.3.3</Version>
+    </PackageReference>
+    <PackageReference Include="Toasts.Forms.Plugin">
+      <Version>3.3.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.FormsPlugin.IconEntry">
+      <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Geolocator">
+      <Version>5.0.0-beta124</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Media">
+      <Version>3.1.3.222-beta</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugins.Forms.CustomReturnEntry">
+      <Version>4.1.0-pre1</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugins.Forms.ImageCircle">
       <Version>2.0.1</Version>
     </PackageReference>
-    <PackageReference Include="Xamarin.Forms" Version="2.5.0.121934" />
+    <PackageReference Include="Xamarin.Controls.SignaturePad">
+      <Version>2.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Controls.SignaturePad.Forms">
+      <Version>2.3.0</Version>
+    </PackageReference>
+    <PackageReference Include="Xamarin.Forms" Version="2.5.0.122203" />
     <PackageReference Include="Xamarin.Android.Support.Design" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.AppCompat" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v4" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
+    <PackageReference Include="XLabs.Forms">
+      <Version>2.0.5782</Version>
+    </PackageReference>
+    <PackageReference Include="XPlat.Device.Geolocation">
+      <Version>1.2.18022.1</Version>
+    </PackageReference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CustomEntryRenderer.cs" />
+    <Compile Include="FileHelper.cs" />
+    <Compile Include="Indigent\Assignment\acceptedResponse.cs" />
     <Compile Include="MainActivity.cs" />
     <Compile Include="Resources\Resource.Designer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RoundedButtonRenderer.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -76,7 +183,9 @@
     <AndroidResource Include="Resources\drawable-xxhdpi\icon.png" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <AndroidResource Include="Resources\layout\Tabbar.axml" />
@@ -245,7 +354,25 @@
     <AndroidResource Include="Resources\drawable-xxxhdpi\ic_local_hospital_black_24dp.png" />
   </ItemGroup>
   <ItemGroup>
-    <AndroidResource Include="Resources\drawable\splashScreen.png" />
+    <AndroidResource Include="Resources\drawable\iconsUser.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\iconslock.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\splashimage.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\ekbackground3_logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\iconMain.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\livingC.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\xml\file_paths.xml" />
   </ItemGroup>
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />

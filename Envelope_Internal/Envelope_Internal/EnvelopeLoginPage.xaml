@@ -8,68 +8,52 @@
              Padding="25"
              NavigationPage.HasNavigationBar="False"
              NavigationPage.BarTextColor = "White">
-    
     <ScrollView  HorizontalOptions="FillAndExpand">
-
-  
-
             <StackLayout>
-            <Image  Margin="30" HorizontalOptions="Center"
-                                    HeightRequest="120"
-                                    WidthRequest="120" 
-                                    Source="Ekurhulen.png"/>
-            <custom:CustomEntry
-                                CornerRadius="18"
-                               x:Name="username"
-                                IsCurvedCornersEnabled="True"
-                                BorderColor="DarkBlue"    
-                                HorizontalTextAlignment="Center"
-                                FontSize="17"
-                                HeightRequest="40"
-                                Placeholder="Username"
-                                PlaceholderColor="Gray"
-                                TextColor="Black"
-                                
-                                FontAttributes="Bold"
-                                WidthRequest="100"/>
-
-            <custom:CustomEntry
-                                CornerRadius="18"
-                               x:Name="password"
-                                IsPassword="True"
-                                IsCurvedCornersEnabled="True"
-                                BorderColor="DarkBlue"    
-                                HorizontalTextAlignment="Center"
-                                FontSize="17"
-                                HeightRequest="40"
-                                Placeholder="Password"
-                                PlaceholderColor="Gray"
-                                TextColor="Black"
-                                FontAttributes="Bold"
-                                WidthRequest="100"
-                                />
-
-
-
-
-            <local:RoundedButton
-                Margin="20"
-                BackgroundColor="DarkBlue" 
-                TextColor="White"
-                x:Name="login"
-                Text="login"
-                 FontSize="10"
-                Clicked="login_Clicked"
-                Grid.Row="1"
-                Grid.Column="2">
-     
-
-            </local:RoundedButton>
-
-
-
-            <ActivityIndicator x:Name="ProgressLoader" IsRunning="False" VerticalOptions="Start" />
-        </StackLayout>
+                        <Image  Margin="30" 
+                                HorizontalOptions="Center"
+                                HeightRequest="120"
+                                WidthRequest="120" 
+                                Source="Ekurhulen.png"/>
+                        <custom:CustomEntry CornerRadius="18"
+                                            x:Name="username"
+                                            IsCurvedCornersEnabled="True"
+                                            BorderColor="DarkBlue"    
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="17"
+                                            HeightRequest="40"
+                                            Placeholder="Username"
+                                            PlaceholderColor="Gray"
+                                            TextColor="Black"
+                                            FontAttributes="Bold"
+                                            WidthRequest="100"/>
+                        <custom:CustomEntry CornerRadius="18"
+                                            x:Name="password"
+                                            IsPassword="True"
+                                            IsCurvedCornersEnabled="True"
+                                            BorderColor="DarkBlue"    
+                                            HorizontalTextAlignment="Center"
+                                            FontSize="17"
+                                            HeightRequest="40"
+                                            Placeholder="Password"
+                                            PlaceholderColor="Gray"
+                                            TextColor="Black"
+                                            FontAttributes="Bold"
+                                            WidthRequest="100"/>
+                        <local:RoundedButton Margin="20"
+                                             BackgroundColor="DarkBlue" 
+                                             TextColor="White"
+                                             x:Name="login"
+                                             Text="login"
+                                             FontSize="10"
+                                             Clicked="login_Clicked"
+                                             Grid.Row="1"
+                                             Grid.Column="2">
+                        </local:RoundedButton>
+                        <ActivityIndicator x:Name="ProgressLoader"
+                                            IsRunning="False"
+                                            VerticalOptions="Start"/>
+            </StackLayout>
     </ScrollView>
 </ContentPage>
       
