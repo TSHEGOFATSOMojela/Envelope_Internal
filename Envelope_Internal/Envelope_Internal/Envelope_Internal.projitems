@@ -17,6 +17,7 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CustomEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomWebView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\IndigentDB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Accepted\Documents.xaml.cs">
       <DependentUpon>Documents.xaml</DependentUpon>
