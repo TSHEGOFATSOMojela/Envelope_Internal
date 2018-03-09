@@ -1,7 +1,6 @@
 ﻿using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-
 namespace Envelope_Internal.Indigent.Assignment
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
@@ -11,9 +10,7 @@ namespace Envelope_Internal.Indigent.Assignment
         public TappedPageNavigation()
         {
             InitializeComponent();
-
             Title = ((App)App.Current).username.ToString();
-
         }
     }
 }

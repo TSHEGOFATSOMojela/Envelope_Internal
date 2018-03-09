@@ -19,8 +19,8 @@
 		    public EnvelopeMainPage()
 		    {
 			    InitializeComponent ();
-          //  Title = ((App)App.Current).username.ToString();
-            //Binding Items to View
+                //Title = ((App)App.Current).username.ToString();
+               //Binding Items to View
             SettingListView.ItemsSource = new List<settingLv>
                 {
                  //Declearing an item Name
@@ -67,25 +67,21 @@
                 await Navigation.PushAsync(new GeneralPage());
 
             }
-
             //Settings label 
             private async void OnSettingsClicked(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new SettingsPage());
             }
-
             //Indigent image 
             private async void OnIndigentClicked(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new TappedPageNavigation());
             }
-
             //M_health image 
             private async void OnMhealthClicked(object sender, EventArgs e)
             {
                 await Navigation.PushAsync(new BottomNavigationBar());
             }
-
             //log call image
             private async void called(object sender, EventArgs e)
             {
