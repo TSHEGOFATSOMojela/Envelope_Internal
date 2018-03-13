@@ -9,8 +9,9 @@
 
             <!-- Styles -->
             <Style TargetType="NavigationPage">
-                <Setter Property="BarBackgroundColor" Value="#ff5300"/>
+                <Setter Property="BarBackgroundColor" Value="Color.Black"/>
                 <Setter Property="BarTextColor" Value="White"/>
+                
             </Style>
             <!-- Styles -->
 

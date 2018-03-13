@@ -48,7 +48,7 @@
 
 
                // var Longitude = position.Longitude.ToString();
-                   // var Latitude = position.Latitude.ToString();
+              // var Latitude = position.Latitude.ToString();
 
                 var output = string.Format("Time: {0} \nLat: {1} \nLong: {2} \nAltitude: {3} \nAltitude Accuracy: {4} \nAccuracy: {5} \nHeading: {6} \nSpeed: {7}",
                     position.Timestamp, position.Latitude, position.Longitude,
@@ -60,6 +60,7 @@
                 await DisplayAlert("Location",  output, "Save", "Cancel");
                
             }
+
             catch (Exception ex)
             {
                 await DisplayAlert("Location", "Unable to get location, may need to increase timeout " + ex, "Save", "Cancel");

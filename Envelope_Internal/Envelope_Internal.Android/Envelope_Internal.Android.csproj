@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>Envelope_Internal.Droid</RootNamespace>
     <AssemblyName>Envelope_Internal.Android</AssemblyName>
-    <TargetFrameworkVersion>v8.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.1</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -66,7 +66,7 @@
       <Version>1.1.1-alpha</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Build.Framework">
-      <Version>15.5.180</Version>
+      <Version>15.6.82</Version>
     </PackageReference>
     <PackageReference Include="Microsoft.Net.Http">
       <Version>2.2.29</Version>
@@ -84,7 +84,7 @@
       <Version>2.2.1</Version>
     </PackageReference>
     <PackageReference Include="Plugins.Forms.ButtonCircle">
-      <Version>2.0.1.48-beta</Version>
+      <Version>2.0.2</Version>
     </PackageReference>
     <PackageReference Include="Plugins.Forms.EntryValidator">
       <Version>1.0.47</Version>
@@ -122,6 +122,30 @@
     <PackageReference Include="SQLitePCLRaw.provider.e_sqlite3.android">
       <Version>1.1.9</Version>
     </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.Core">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.DataSource">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.GridCommon">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfDataGrid">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfListView">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericTextBox">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfNumericUpDown">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
+    <PackageReference Include="Syncfusion.Xamarin.SfPullToRefresh">
+      <Version>16.1.0.26</Version>
+    </PackageReference>
     <PackageReference Include="System.Net.Http">
       <Version>4.3.3</Version>
     </PackageReference>
@@ -156,7 +180,7 @@
     <PackageReference Include="Xamarin.Android.Support.v7.CardView" Version="25.4.0.2" />
     <PackageReference Include="Xamarin.Android.Support.v7.MediaRouter" Version="25.4.0.2" />
     <PackageReference Include="XLabs.Forms">
-      <Version>2.0.5782</Version>
+      <Version>2.3.0-pre05</Version>
     </PackageReference>
     <PackageReference Include="XPlat.Device.Geolocation">
       <Version>1.2.18022.1</Version>
@@ -907,6 +931,24 @@
   </ItemGroup>
   <ItemGroup>
     <AndroidAsset Include="Assets\pdfjs\web\images\toolbarButton-zoomOut%402x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable\iconswebsearch.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxxhdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-hdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-mdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xhdpi\ic_search_white_24dp.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <AndroidResource Include="Resources\drawable-xxhdpi\ic_search_white_24dp.png" />
   </ItemGroup>
   <Import Project="..\Envelope_Internal\Envelope_Internal.projitems" Label="Shared" />
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.CSharp.targets" />
