@@ -77,15 +77,6 @@
             {
                 await Navigation.PushAsync(new TappedPageNavigation());
             }
-            //M_health image 
-            private async void OnMhealthClicked(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new BottomNavigationBar());
-            }
-            //log call image
-            private async void called(object sender, EventArgs e)
-            {
-                await Navigation.PushAsync(new TappedPageNavigation());
-            }
-        }
+      
+    }
     }

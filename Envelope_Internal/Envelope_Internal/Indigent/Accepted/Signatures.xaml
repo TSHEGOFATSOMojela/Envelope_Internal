@@ -15,7 +15,7 @@
                          Text="Log out"
                          
                         Priority="1"/>
-
+   
     </ContentPage.ToolbarItems>
     <StackLayout>
         <forms:SignaturePadView StrokeWidth="5"

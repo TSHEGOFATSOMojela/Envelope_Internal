@@ -7,13 +7,17 @@
                  BarTextColor="White"
                  NavigationPage.HasBackButton="False"
                  NavigationPage.HasNavigationBar="True"
+                 
                  Title="{Binding Title}">
         <ContentPage.ToolbarItems>
                                 <ToolbarItem Name="_Log out"
                                              Order="Secondary"
                                              Text="Log out"
                                              Priority="1"/>
-        </ContentPage.ToolbarItems>
+                                 <ToolbarItem
+                                     
+                                          Icon="ic_search_white_24dp.png"  Order="Primary" Priority="1"/>
+    </ContentPage.ToolbarItems>
     <!--Pages can be added as references or inline-->
     <pages:AssignmentList/>
     <pages:AccptedAssignmentsList/>
