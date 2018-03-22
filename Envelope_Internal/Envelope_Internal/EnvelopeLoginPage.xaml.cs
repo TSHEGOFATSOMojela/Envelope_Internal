@@ -7,6 +7,8 @@ using Envelope_Internal.Indigent.Assignment;
 using Envelope_Internal.Indigent.Models;
 using Envelope_Internal.Indigent.Services;
 using Xamarin.Forms;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Xamarin.Forms.Xaml;
@@ -22,10 +24,30 @@ namespace Envelope_Internal
 			    InitializeComponent();
             
             }
-    
 
-        //Orientation change
+        //Check Network
+        protected override async void OnAppearing()
 
+        {
+
+            base.OnAppearing();
+
+
+
+            if (!CrossConnectivity.Current.IsConnected)
+
+            {
+
+                await DisplayAlert("Network Status", "Please Check Network Connectivity", "OK");
+
+            }
+
+
+
+
+        }
+
+  
 
         private async void login_Clicked(object sender, EventArgs e)
         {

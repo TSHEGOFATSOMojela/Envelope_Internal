@@ -9,6 +9,9 @@ using Envelope_Internal;
 using  Envelope_Internal.Indigent.Models;
 using Envelope_Internal.Indigent.Assignment;
 using Xamarin.Forms;
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
+
 
 [assembly: XamlCompilation(XamlCompilationOptions.Compile)]
 namespace Envelope_Internal
@@ -43,10 +46,13 @@ namespace Envelope_Internal
 
         protected override void OnStart ()
 		{
-			// Handle when your app starts
-		}
+            // Handle when your app starts
+            //CrossConnectivity.Current.ConnectivityChanged += HandleConnectivityChanged;
+        }
 
-		protected override void OnSleep ()
+
+
+        protected override void OnSleep ()
 		{
 			// Handle when your app sleeps
 		}

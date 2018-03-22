@@ -134,8 +134,6 @@
   <ItemGroup>
     <Folder Include="$(MSBuildThisFileDirectory)Indigent\Closed\" />
     <Folder Include="$(MSBuildThisFileDirectory)Indigent\Rejected\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Interface\" />
-    <Folder Include="$(MSBuildThisFileDirectory)Model\" />
     <Folder Include="$(MSBuildThisFileDirectory)Settings\" />
   </ItemGroup>
   <ItemGroup>

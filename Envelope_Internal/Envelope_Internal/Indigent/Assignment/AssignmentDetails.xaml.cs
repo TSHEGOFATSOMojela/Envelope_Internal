@@ -6,7 +6,8 @@
     using System.Threading.Tasks;
     using Envelope_Internal.Indigent.ViewModels;
     using Envelope_Internal.Indigent.Models;
-
+    using Plugin.Connectivity;
+    using Plugin.Connectivity.Abstractions;
     using SQLite;
     using System.Net.Http;
     using Newtonsoft.Json;
@@ -33,8 +34,31 @@
           
             }
 
-            //Passing Accepted(Assignment list) Status description method
-            private async void AcceptedClicked(object sender, EventArgs e)
+        //Check Network
+        protected override async void OnAppearing()
+
+        {
+
+            base.OnAppearing();
+
+
+
+            if (!CrossConnectivity.Current.IsConnected)
+
+            {
+
+                await DisplayAlert("Network Status", "Please Check Network Connectivity", "OK");
+
+            }
+
+
+
+
+
+        }
+
+        //Passing Accepted(Assignment list) Status description method
+        private async void AcceptedClicked(object sender, EventArgs e)
             {
                 //Binding Item data
                 var indigentDetails = (Indigents)BindingContext;

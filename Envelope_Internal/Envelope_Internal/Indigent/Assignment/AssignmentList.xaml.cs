@@ -5,7 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 using Envelope_Internal.Indigent.ViewModels;
 using Envelope_Internal.Indigent.Models;
-
+using Plugin.Connectivity;
+using Plugin.Connectivity.Abstractions;
 using System.Net.Http;
 using Newtonsoft.Json;
 using Xamarin.Forms;
@@ -23,6 +24,28 @@ namespace Envelope_Internal.Indigent.Assignment
             //Binding Assignment List details to the View
             GetIndigentDetailsAsync();
 
+
+        }
+        //Check Network
+        protected override async void OnAppearing()
+
+        {
+
+            base.OnAppearing();
+
+
+
+            if (!CrossConnectivity.Current.IsConnected)
+
+            {
+
+                await DisplayAlert("Network Status", "Please Check Network Connectivity", "OK");
+
+            }
+
+
+
+        
 
         }
 
