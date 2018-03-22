@@ -15,7 +15,7 @@
                                 HeightRequest="120"
                                 WidthRequest="120" 
                                 Source="Ekurhulen.png"/>
-                        <custom:CustomEntry CornerRadius="18"
+                        <custom:CustomEntry CornerRadius="10"
                                             x:Name="username"
                                             IsCurvedCornersEnabled="True"
                                             BorderColor="DarkBlue"    
@@ -27,7 +27,7 @@
                                             TextColor="Black"
                                             FontAttributes="Bold"
                                             WidthRequest="100"/>
-                        <custom:CustomEntry CornerRadius="18"
+                        <custom:CustomEntry CornerRadius="10"
                                             x:Name="password"
                                             IsPassword="True"
                                             IsCurvedCornersEnabled="True"

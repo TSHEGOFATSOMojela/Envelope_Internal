@@ -175,7 +175,7 @@
       <Version>1.1.10-pre20180223200113</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.Core">
-      <Version>16.1.0.26</Version>
+      <Version>16.1.0.24</Version>
     </PackageReference>
     <PackageReference Include="Syncfusion.Xamarin.DataSource">
       <Version>16.1.0.26</Version>
@@ -203,6 +203,9 @@
     </PackageReference>
     <PackageReference Include="Xam.FormsPlugin.IconEntry">
       <Version>1.0.1</Version>
+    </PackageReference>
+    <PackageReference Include="Xam.Plugin.Connectivity">
+      <Version>3.0.3</Version>
     </PackageReference>
     <PackageReference Include="Xam.Plugin.Geolocator">
       <Version>5.0.0.187-beta</Version>
