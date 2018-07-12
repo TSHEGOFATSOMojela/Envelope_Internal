@@ -15,7 +15,9 @@
                         Priority="1"/>
         <ToolbarItem
                                      
-                                          Icon="ic_search_white_24dp.png"  Order="Primary" Priority="1"/>
+           Icon="ic_search_white_24dp.png" 
+            Order="Primary"
+            Priority="1"/>
     </ContentPage.ToolbarItems>
     <ScrollView HorizontalOptions="FillAndExpand">
 

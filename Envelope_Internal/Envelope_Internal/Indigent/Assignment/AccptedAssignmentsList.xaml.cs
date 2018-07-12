@@ -13,15 +13,17 @@ using Newtonsoft.Json;
 using Envelope_Internal.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using static Envelope_Internal.CustomNavigationPage;
 
 namespace Envelope_Internal.Indigent.Assignment
 {
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class AccptedAssignmentsList : ContentPage
-	{
+    {
         //Accpted Assignments List Constructor
         public AccptedAssignmentsList()
         {
+           
             InitializeComponent();
             //Binding  Accepted Assignment List Details to view
             // GetIndigentDetailsAsync();

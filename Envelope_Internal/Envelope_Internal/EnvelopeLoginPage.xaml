@@ -25,7 +25,7 @@
                                             Placeholder="Username"
                                             PlaceholderColor="Gray"
                                             TextColor="Black"
-                                            FontAttributes="Bold"
+                                            FontAttributes="Italic"
                                             WidthRequest="100"/>
                         <custom:CustomEntry CornerRadius="10"
                                             x:Name="password"
@@ -38,7 +38,7 @@
                                             Placeholder="Password"
                                             PlaceholderColor="Gray"
                                             TextColor="Black"
-                                            FontAttributes="Bold"
+                                            FontAttributes="Italic"
                                             WidthRequest="100"/>
                         <local:RoundedButton Margin="20"
                                              BackgroundColor="DarkBlue" 

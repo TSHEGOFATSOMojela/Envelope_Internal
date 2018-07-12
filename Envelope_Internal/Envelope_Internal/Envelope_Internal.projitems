@@ -17,6 +17,11 @@
       <DependentUpon>App.xaml</DependentUpon>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CustomEntry.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomNavigationPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomPage.xaml.cs">
+      <DependentUpon>CustomPage.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)CustomWebView.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Data\IndigentDB.cs" />
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Accepted\Documents.xaml.cs">
@@ -41,6 +46,10 @@
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Accepted\StatementAccount.xaml.cs">
       <DependentUpon>StatementAccount.xaml</DependentUpon>
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="$(MSBuildThisFileDirectory)Indigent\Accepted\VerifyHouseHoldDetails.xaml.cs">
+      <DependentUpon>VerifyHouseHoldDetails.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
     <Compile Include="$(MSBuildThisFileDirectory)Indigent\Assignment\AccptedAssignmentsList.xaml.cs">
@@ -222,6 +231,18 @@
     <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Accepted\StatementAccount.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)Indigent\Accepted\VerifyHouseHoldDetails.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="$(MSBuildThisFileDirectory)CustomPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
     </EmbeddedResource>
   </ItemGroup>
 </Project>

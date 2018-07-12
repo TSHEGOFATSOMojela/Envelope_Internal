@@ -44,7 +44,8 @@
         <NavigationPage>
             <x:Arguments>
                 <ContentPage Title="City Of Ekurhuleni"
-                  BackgroundImage="ekbackground3_logo.png"  >
+                  BackgroundImage="ekbackground3_logo.png" 
+                         >
                     <ContentPage.ToolbarItems>
                         <ToolbarItem Name="_General"
                                      Order="Secondary"
