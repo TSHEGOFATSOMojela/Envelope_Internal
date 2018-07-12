@@ -8,20 +8,17 @@
     <ContentPage.ToolbarItems>
         <ToolbarItem 
                         Name="Accept"
-                         Order="Secondary"
-                         Priority="1"
-           
-                         Clicked="AcceptedClicked"
-                         Text="Accept"/>
+                        Icon="acccppt.png"
+                        Clicked="AcceptedClicked"
+                        Text="Accept"
+                    />
 
         <ToolbarItem     
             Name="Unavailable"
-                          Order="Secondary"
-                         Priority="1"
-                         Clicked="UnavailableClicked"
-                         Text="Unavailable"/>
-
-    
+                        Icon="iconsdelete.png"
+                        Clicked="UnavailableClicked"
+                        Text="Unavailable"
+                       />
 
             <ToolbarItem Name="_Log out"
                      
@@ -30,9 +27,7 @@
                          Text="Log out"
                          
                         Priority="1"/>
-        <ToolbarItem
-                                     
-                                          Icon="ic_search_white_24dp.png"  Order="Primary" Priority="1"/>
+   
     </ContentPage.ToolbarItems>
     <ScrollView HorizontalOptions="FillAndExpand">
 

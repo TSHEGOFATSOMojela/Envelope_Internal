@@ -1,6 +1,6 @@
 ﻿using System;
 using Plugin.Permissions;
-
+using Envelope_Internal.Droid;
 using Android.App;
 using Android.Content.PM;
 using Envelope_Internal.Indigent.Accepted;
@@ -20,6 +20,9 @@ namespace Envelope_Internal.Droid
             ToolbarResource = Resource.Layout.Toolbar;
 
             base.OnCreate(bundle);
+
+            //LayoutInflater.Factory = new CustomLayoutInflaterFactory();
+
             Plugin.CurrentActivity.CrossCurrentActivity.Current.Activity = this;
             global::Xamarin.Forms.Forms.Init(this, bundle);
             LoadApplication(new App());

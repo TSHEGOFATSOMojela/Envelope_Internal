@@ -49,6 +49,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
         }
 
+        //Get current user (Logged in)
         string username = ((App)App.Current).username.ToString();
 
         //Item Selected Method
@@ -58,7 +59,7 @@ namespace Envelope_Internal.Indigent.Assignment
             var itemSelectedData = e.SelectedItem as Indigents;
             //Passing item selected details to Assignment Detail page
             Navigation.PushAsync(new AssignmentDetails(itemSelectedData));
-            
+            itemSelectedData = null;
         }
         
         //Get Assignment list details Method
@@ -70,7 +71,7 @@ namespace Envelope_Internal.Indigent.Assignment
 
                 HttpClient client = new HttpClient();
                 //Get Assignment list details
-                var response = await client.GetStringAsync("https://munipoiapp.herokuapp.com/api/applications/New/KemptonMobileward1");
+                var response = await client.GetStringAsync("http://196.15.242.196:5000/api/applications/New/" + username);
                 //DeserializeObject Indigents
                 var IndigentDetails = JsonConvert.DeserializeObject<List<Indigents>>(response);
                 //Binding Assignment list details to View

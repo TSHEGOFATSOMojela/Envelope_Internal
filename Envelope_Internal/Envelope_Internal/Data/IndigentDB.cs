@@ -40,10 +40,10 @@ namespace Envelope_Internal.Data
             }
             else
             {
-                return database.InsertAsync(item);
+                return database.InsertOrReplaceAsync(item);
             }
         }
-
+     
         public Task<int> DeleteItemAsync(assignment item)
         {
             return database.DeleteAsync(item);

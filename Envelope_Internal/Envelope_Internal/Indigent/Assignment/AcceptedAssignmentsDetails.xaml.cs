@@ -83,7 +83,7 @@
             {
             var indigentDetails = (Indigents)BindingContext;
            
-            await Navigation.PushAsync(new HouseHoldDetails(indigentDetails));
+            await Navigation.PushAsync(new VerifyHouseHoldDetails(indigentDetails));
             }
 
             //Signatures Button

@@ -70,7 +70,8 @@ namespace Envelope_Internal
                 if (root.IsCorrect == "Yes")
                 {
                     ((App)App.Current).username = username.Text;
-                    await DisplayAlert("Login Status", "You are login", "Okay", "Cancel");
+                    await DisplayAlert("Login Status", "You are login","OK");
+                    
                     //Navigate to Tapped page Navigation
                     await Navigation.PushAsync(new EnvelopeMainPage());
 

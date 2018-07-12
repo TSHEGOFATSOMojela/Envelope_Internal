@@ -3,11 +3,12 @@
                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
                  x:Class="Envelope_Internal.Indigent.Assignment.TappedPageNavigation"
                  xmlns:pages="clr-namespace:Envelope_Internal.Indigent.Assignment"
+                 xmlns:local="clr-namespace:Envelope_Internal"
                  BarBackgroundColor="Black"
                  BarTextColor="White"
                  NavigationPage.HasBackButton="False"
                  NavigationPage.HasNavigationBar="True"
-                 
+
                  Title="{Binding Title}">
         <ContentPage.ToolbarItems>
                                 <ToolbarItem Name="_Log out"

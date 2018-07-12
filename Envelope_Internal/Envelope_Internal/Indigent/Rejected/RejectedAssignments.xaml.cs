@@ -13,14 +13,27 @@ using Newtonsoft.Json;
 using Envelope_Internal.Data;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
+using Envelope_Internal;
+using static Envelope_Internal.CustomNavigationPage;
 
 namespace Envelope_Internal.Indigent.Assignment
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class RejectedAssignments : ContentPage
+    public partial class RejectedAssignments : CustomPage
     {
         public RejectedAssignments()
         {
+            CustomNavigationPage.SetSubtitleFont(this, Font.SystemFontOfSize(NamedSize.Micro));
+            CustomNavigationPage.SetTitleMargin(this, new Thickness(0, 0, 5, 0));
+            this.FormattedTitle = new FormattedString();
+            this.FormattedTitle.Spans.Add(new Span()
+            {
+              
+                FontSize = 10,
+              
+            });
+
+            CustomNavigationPage.SetTitlePosition(this, TitleAlignment.Center);
             InitializeComponent();
 
             //GetIndigentDetailsAsync();
